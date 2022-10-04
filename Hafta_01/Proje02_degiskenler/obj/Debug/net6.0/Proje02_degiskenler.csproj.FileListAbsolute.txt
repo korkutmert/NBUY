@@ -1,0 +1,15 @@
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje02_degiskenler\bin\Debug\net6.0\Proje02_degiskenler.exe
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje02_degiskenler\bin\Debug\net6.0\Proje02_degiskenler.deps.json
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje02_degiskenler\bin\Debug\net6.0\Proje02_degiskenler.runtimeconfig.json
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje02_degiskenler\bin\Debug\net6.0\Proje02_degiskenler.dll
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje02_degiskenler\bin\Debug\net6.0\Proje02_degiskenler.pdb
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje02_degiskenler\obj\Debug\net6.0\Proje02_degiskenler.csproj.AssemblyReference.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje02_degiskenler\obj\Debug\net6.0\Proje02_degiskenler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje02_degiskenler\obj\Debug\net6.0\Proje02_degiskenler.AssemblyInfoInputs.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje02_degiskenler\obj\Debug\net6.0\Proje02_degiskenler.AssemblyInfo.cs
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje02_degiskenler\obj\Debug\net6.0\Proje02_degiskenler.csproj.CoreCompileInputs.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje02_degiskenler\obj\Debug\net6.0\Proje02_degiskenler.dll
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje02_degiskenler\obj\Debug\net6.0\refint\Proje02_degiskenler.dll
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje02_degiskenler\obj\Debug\net6.0\Proje02_degiskenler.pdb
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje02_degiskenler\obj\Debug\net6.0\Proje02_degiskenler.genruntimeconfig.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje02_degiskenler\obj\Debug\net6.0\ref\Proje02_degiskenler.dll
