@@ -1,0 +1,15 @@
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje07_TarihMetotlari\bin\Debug\net6.0\Proje07_TarihMetotlari.exe
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje07_TarihMetotlari\bin\Debug\net6.0\Proje07_TarihMetotlari.deps.json
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje07_TarihMetotlari\bin\Debug\net6.0\Proje07_TarihMetotlari.runtimeconfig.json
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje07_TarihMetotlari\bin\Debug\net6.0\Proje07_TarihMetotlari.dll
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje07_TarihMetotlari\bin\Debug\net6.0\Proje07_TarihMetotlari.pdb
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje07_TarihMetotlari\obj\Debug\net6.0\Proje07_TarihMetotlari.csproj.AssemblyReference.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje07_TarihMetotlari\obj\Debug\net6.0\Proje07_TarihMetotlari.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje07_TarihMetotlari\obj\Debug\net6.0\Proje07_TarihMetotlari.AssemblyInfoInputs.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje07_TarihMetotlari\obj\Debug\net6.0\Proje07_TarihMetotlari.AssemblyInfo.cs
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje07_TarihMetotlari\obj\Debug\net6.0\Proje07_TarihMetotlari.csproj.CoreCompileInputs.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje07_TarihMetotlari\obj\Debug\net6.0\Proje07_TarihMetotlari.dll
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje07_TarihMetotlari\obj\Debug\net6.0\refint\Proje07_TarihMetotlari.dll
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje07_TarihMetotlari\obj\Debug\net6.0\Proje07_TarihMetotlari.pdb
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje07_TarihMetotlari\obj\Debug\net6.0\Proje07_TarihMetotlari.genruntimeconfig.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje07_TarihMetotlari\obj\Debug\net6.0\ref\Proje07_TarihMetotlari.dll

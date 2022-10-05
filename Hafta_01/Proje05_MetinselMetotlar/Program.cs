@@ -103,6 +103,18 @@ namespace Proje05_MetinselMetotlar
             //Console.WriteLine($" {aranacakIfade} ifadesi {adres} içinde, {siraNo}. sıradadır");
 
 
+            //string metin = "Wissen Akademie";
+            //Console.WriteLine($"Metnin İlk Hali : {metin}");
+            //Console.WriteLine($"Akademie ifadesi silindikten sonraki hali : {metin.Remove(6)}");
+            //Console.WriteLine($"Aka ifadesi silindikten sonraki hali : {metin.Remove(7, 3)}");
+
+            string urunAd = "Iphone 13 Pro";
+          //  iphone-13-pro haline çevirmek için;
+          //string sonuc = (urunAd.Replace(" ", "-");
+          //  string sonuc= urunAd.ToLower().Replace(" ", "-");
+          //  Console.WriteLine(sonuc);
+            
+
 
 
 
