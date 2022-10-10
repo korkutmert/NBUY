@@ -1,0 +1,15 @@
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje15_ClassPropertyField\bin\Debug\net6.0\Proje15_ClassPropertyField.exe
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje15_ClassPropertyField\bin\Debug\net6.0\Proje15_ClassPropertyField.deps.json
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje15_ClassPropertyField\bin\Debug\net6.0\Proje15_ClassPropertyField.runtimeconfig.json
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje15_ClassPropertyField\bin\Debug\net6.0\Proje15_ClassPropertyField.dll
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje15_ClassPropertyField\bin\Debug\net6.0\Proje15_ClassPropertyField.pdb
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje15_ClassPropertyField\obj\Debug\net6.0\Proje15_ClassPropertyField.csproj.AssemblyReference.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje15_ClassPropertyField\obj\Debug\net6.0\Proje15_ClassPropertyField.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje15_ClassPropertyField\obj\Debug\net6.0\Proje15_ClassPropertyField.AssemblyInfoInputs.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje15_ClassPropertyField\obj\Debug\net6.0\Proje15_ClassPropertyField.AssemblyInfo.cs
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje15_ClassPropertyField\obj\Debug\net6.0\Proje15_ClassPropertyField.csproj.CoreCompileInputs.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje15_ClassPropertyField\obj\Debug\net6.0\Proje15_ClassPropertyField.dll
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje15_ClassPropertyField\obj\Debug\net6.0\refint\Proje15_ClassPropertyField.dll
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje15_ClassPropertyField\obj\Debug\net6.0\Proje15_ClassPropertyField.pdb
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje15_ClassPropertyField\obj\Debug\net6.0\Proje15_ClassPropertyField.genruntimeconfig.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje15_ClassPropertyField\obj\Debug\net6.0\ref\Proje15_ClassPropertyField.dll

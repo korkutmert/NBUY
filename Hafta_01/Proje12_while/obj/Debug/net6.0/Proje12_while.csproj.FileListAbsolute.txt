@@ -1,0 +1,15 @@
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje12_while\bin\Debug\net6.0\Proje12_while.exe
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje12_while\bin\Debug\net6.0\Proje12_while.deps.json
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje12_while\bin\Debug\net6.0\Proje12_while.runtimeconfig.json
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje12_while\bin\Debug\net6.0\Proje12_while.dll
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje12_while\bin\Debug\net6.0\Proje12_while.pdb
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje12_while\obj\Debug\net6.0\Proje12_while.csproj.AssemblyReference.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje12_while\obj\Debug\net6.0\Proje12_while.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje12_while\obj\Debug\net6.0\Proje12_while.AssemblyInfoInputs.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje12_while\obj\Debug\net6.0\Proje12_while.AssemblyInfo.cs
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje12_while\obj\Debug\net6.0\Proje12_while.csproj.CoreCompileInputs.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje12_while\obj\Debug\net6.0\Proje12_while.dll
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje12_while\obj\Debug\net6.0\refint\Proje12_while.dll
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje12_while\obj\Debug\net6.0\Proje12_while.pdb
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje12_while\obj\Debug\net6.0\Proje12_while.genruntimeconfig.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Hafta_01\Proje12_while\obj\Debug\net6.0\ref\Proje12_while.dll

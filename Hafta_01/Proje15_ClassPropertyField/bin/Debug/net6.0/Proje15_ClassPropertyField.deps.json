@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Proje15_ClassPropertyField/1.0.0": {
+        "runtime": {
+          "Proje15_ClassPropertyField.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Proje15_ClassPropertyField/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
