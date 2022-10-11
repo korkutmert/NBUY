@@ -13,3 +13,18 @@ C:\Users\kemre\OneDrive\Masaüstü\mert\mertOdev\mertOdev\obj\Debug\net6.0\refin
 C:\Users\kemre\OneDrive\Masaüstü\mert\mertOdev\mertOdev\obj\Debug\net6.0\mertOdev.pdb
 C:\Users\kemre\OneDrive\Masaüstü\mert\mertOdev\mertOdev\obj\Debug\net6.0\mertOdev.genruntimeconfig.cache
 C:\Users\kemre\OneDrive\Masaüstü\mert\mertOdev\mertOdev\obj\Debug\net6.0\ref\mertOdev.dll
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_01\mert\mert korkut muslu rastgele şifre ödevie\mertOdev\bin\Debug\net6.0\mertOdev.exe
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_01\mert\mert korkut muslu rastgele şifre ödevie\mertOdev\bin\Debug\net6.0\mertOdev.deps.json
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_01\mert\mert korkut muslu rastgele şifre ödevie\mertOdev\bin\Debug\net6.0\mertOdev.runtimeconfig.json
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_01\mert\mert korkut muslu rastgele şifre ödevie\mertOdev\bin\Debug\net6.0\mertOdev.dll
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_01\mert\mert korkut muslu rastgele şifre ödevie\mertOdev\bin\Debug\net6.0\mertOdev.pdb
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_01\mert\mert korkut muslu rastgele şifre ödevie\mertOdev\obj\Debug\net6.0\mertOdev.csproj.AssemblyReference.cache
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_01\mert\mert korkut muslu rastgele şifre ödevie\mertOdev\obj\Debug\net6.0\mertOdev.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_01\mert\mert korkut muslu rastgele şifre ödevie\mertOdev\obj\Debug\net6.0\mertOdev.AssemblyInfoInputs.cache
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_01\mert\mert korkut muslu rastgele şifre ödevie\mertOdev\obj\Debug\net6.0\mertOdev.AssemblyInfo.cs
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_01\mert\mert korkut muslu rastgele şifre ödevie\mertOdev\obj\Debug\net6.0\mertOdev.csproj.CoreCompileInputs.cache
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_01\mert\mert korkut muslu rastgele şifre ödevie\mertOdev\obj\Debug\net6.0\mertOdev.dll
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_01\mert\mert korkut muslu rastgele şifre ödevie\mertOdev\obj\Debug\net6.0\refint\mertOdev.dll
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_01\mert\mert korkut muslu rastgele şifre ödevie\mertOdev\obj\Debug\net6.0\mertOdev.pdb
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_01\mert\mert korkut muslu rastgele şifre ödevie\mertOdev\obj\Debug\net6.0\mertOdev.genruntimeconfig.cache
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_01\mert\mert korkut muslu rastgele şifre ödevie\mertOdev\obj\Debug\net6.0\ref\mertOdev.dll

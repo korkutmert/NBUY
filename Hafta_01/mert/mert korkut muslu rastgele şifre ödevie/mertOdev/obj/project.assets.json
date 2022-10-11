@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\kemre\\.nuget\\packages\\": {}
+    "C:\\Users\\SABAH\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kemre\\OneDrive\\Masaüstü\\mert\\mertOdev\\mertOdev\\mertOdev.csproj",
+      "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_01\\mert\\mert korkut muslu rastgele şifre ödevie\\mertOdev\\mertOdev.csproj",
       "projectName": "mertOdev",
-      "projectPath": "C:\\Users\\kemre\\OneDrive\\Masaüstü\\mert\\mertOdev\\mertOdev\\mertOdev.csproj",
-      "packagesPath": "C:\\Users\\kemre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kemre\\OneDrive\\Masaüstü\\mert\\mertOdev\\mertOdev\\obj\\",
+      "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_01\\mert\\mert korkut muslu rastgele şifre ödevie\\mertOdev\\mertOdev.csproj",
+      "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_01\\mert\\mert korkut muslu rastgele şifre ödevie\\mertOdev\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kemre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
