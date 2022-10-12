@@ -1,0 +1,15 @@
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_02\Proje12_OOP_WORK_HOCA\bin\Debug\net6.0\Proje12_OOP_WORK_HOCA.exe
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_02\Proje12_OOP_WORK_HOCA\bin\Debug\net6.0\Proje12_OOP_WORK_HOCA.deps.json
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_02\Proje12_OOP_WORK_HOCA\bin\Debug\net6.0\Proje12_OOP_WORK_HOCA.runtimeconfig.json
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_02\Proje12_OOP_WORK_HOCA\bin\Debug\net6.0\Proje12_OOP_WORK_HOCA.dll
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_02\Proje12_OOP_WORK_HOCA\bin\Debug\net6.0\Proje12_OOP_WORK_HOCA.pdb
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_02\Proje12_OOP_WORK_HOCA\obj\Debug\net6.0\Proje12_OOP_WORK_HOCA.csproj.AssemblyReference.cache
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_02\Proje12_OOP_WORK_HOCA\obj\Debug\net6.0\Proje12_OOP_WORK_HOCA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_02\Proje12_OOP_WORK_HOCA\obj\Debug\net6.0\Proje12_OOP_WORK_HOCA.AssemblyInfoInputs.cache
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_02\Proje12_OOP_WORK_HOCA\obj\Debug\net6.0\Proje12_OOP_WORK_HOCA.AssemblyInfo.cs
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_02\Proje12_OOP_WORK_HOCA\obj\Debug\net6.0\Proje12_OOP_WORK_HOCA.csproj.CoreCompileInputs.cache
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_02\Proje12_OOP_WORK_HOCA\obj\Debug\net6.0\Proje12_OOP_WORK_HOCA.dll
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_02\Proje12_OOP_WORK_HOCA\obj\Debug\net6.0\refint\Proje12_OOP_WORK_HOCA.dll
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_02\Proje12_OOP_WORK_HOCA\obj\Debug\net6.0\Proje12_OOP_WORK_HOCA.pdb
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_02\Proje12_OOP_WORK_HOCA\obj\Debug\net6.0\Proje12_OOP_WORK_HOCA.genruntimeconfig.cache
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_02\Proje12_OOP_WORK_HOCA\obj\Debug\net6.0\ref\Proje12_OOP_WORK_HOCA.dll

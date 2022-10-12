@@ -1,0 +1,5 @@
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_02\Proje09_Interface\obj\Debug\net6.0\Proje09_Interface.csproj.AssemblyReference.cache
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_02\Proje09_Interface\obj\Debug\net6.0\Proje09_Interface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_02\Proje09_Interface\obj\Debug\net6.0\Proje09_Interface.AssemblyInfoInputs.cache
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_02\Proje09_Interface\obj\Debug\net6.0\Proje09_Interface.AssemblyInfo.cs
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_02\Proje09_Interface\obj\Debug\net6.0\Proje09_Interface.csproj.CoreCompileInputs.cache

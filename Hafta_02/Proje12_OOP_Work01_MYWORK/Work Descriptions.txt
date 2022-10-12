@@ -1,0 +1,15 @@
+﻿1*) Bir kaç bölümde okuyan öğrencilerin bilgilerinin girilmesini ve bunların 
+doğru bir şekilde class/interface/lise yapılarının içerisinde tutulmasını
+sağlayarak ekrana sonucu yazdıracağız.
+
+2*) Bolum claası   --> Id,Ad,Aciklama
+3*) Ogrenci classı --> Id,OgrNo,Ad,Soyad,Yas
+4*) 2 adet bölüm bilgisi olsun.
+5*) Her bölümün içinde de 3'er adet öğrenci bilgisi olsun.
+6*) Bu bigiler klavyeden girilsin.
+
+Yol Haritası :
+
+1) İhtiyaç duyulan interface/class yapıları hazırlanmalı.
+2) Gerekli metot varsa onlar hazırlanmalı.
+3) Program hazırlanmalı.
