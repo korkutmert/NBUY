@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+    <style>
+        body 
+        {
+            font-size: 15px;
+            color: red;
+            border: 5px solid green;
+        }
+        p 
+        {
+            color: blue;
+            border: 3px solid red;
+        }
+        em
+        {
+            border: inherit;/*color kendisi miras verir ancak border miras vermez burda inherit komutuyla miras aldırdık*/
+            color: initial;/*Color miras aldığı halde istemedik. Ters işlemi 'initial' komtuyla yaparak miras almasını engelledik.*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1 id="page-title">Welcome</h1>
+            <p>Lorem ipsum dolor sit amet consectetur <em>burası vurgulanan metin</em> adipisicing elit. Ea illum fuga consequuntur, eius, alias accusamus minus nisi sequi officia, iure nihil corrupti inventore excepturi harum reiciendis ad! Delectus, est ipsum!</p>
+        </section>
+        <section>
+            <h2 id="page-subtitle">Nasıl Çalışır ?</h2>
+        </section>
+    </main>
+</body>
+</html>

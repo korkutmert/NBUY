@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline/Block</title>
+    <style> 
+    .box {   
+        height: 60px;
+        width: 60px;
+        display: inline-block;
+    }
+
+    #first
+    {
+        background-color: blue;
+        
+    }
+    #second
+    {
+        background-color: red;
+        /* visibility: hidden; */
+        
+        
+    }
+    #third
+    {
+        background-color: hotpink;
+        
+        
+    }
+    a
+    {
+        height: 100px;
+        width: 100px;
+        border:1px solid black;
+        display: inline-block;
+        /* display:none ===> gizlemeye yarar.*/
+       
+        
+    }
+
+    </style>
+</head>
+<body>
+     <div id="conteiner">      <!-- . ya basıp class adı vererek default olarak div oluşutur.  -->
+        <div class="first">          
+            <div class="box" id="first">first</div> <!--  .box#first*3   yazarak oto oluşturduk-->
+            <div class="box" id="second">second</div>
+            <div class="box" id="third">third</div>
+        </div>
+        <div> 
+            <a href="" class="" id="">Anasayfa</a>
+            <a href="" class="" id="">İletişim</a>
+            <a href="" class="" id="">İndir</a>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        main
+        {
+            
+        }
+        body 
+        {
+            margin:5px;
+            height: 400px;
+            
+        }
+        #page-title 
+        {
+            background-color: red;
+            width: 200px;
+            /*margin: 20px 40px 60px 80px; /* Aşağıda ""(subtitle'da)""teker teker yazmıştık bu da aynı işi yapıyor.*/
+            /* margin: 30px 50px 30px 50px; == margin : 30px 50px; */
+          /*  margin: 30px 50px 70px; /* burda right boş kaldığı için left olan 50 yi ona da uygular.
+            /* BU KISA YAZIM TEKNİKLERİ SADECE MARGİNİ İLGİLENDİRMİYOR. */
+            margin: 10px auto; /* Kutu olarak ekranı ortalattık. */
+           
+         }
+        #page-subtitle 
+        {
+            background-color: blue;
+            margin-top: 20px;
+            margin-right: 40px;
+            margin-bottom: 60px;
+            margin-left: 80px;            
+        }
+        h1
+        {
+            text-align: center; /* başlığın içindeki metni kutunun içine ortalattık. */
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        margin  :   Kutunun kenar çizgisinin dışındaki mesafe.(4 kenardan boşluk bırakır.)
+        padding :   Kutunun kenar çizgisinin içerikle arsasındaki mesafe.
+        border  :   Kutunun kenar çizgisi.
+     -->
+     <main>
+        <section id="page-title"  >
+            <h1>Hoş geldiniz.</h1>
+        </section>
+        <section id="page-subtitle">
+            <h2>Nasıl Çalışıyoruz?</h2>
+        </section>
+     </main>
+</body>
+</html>

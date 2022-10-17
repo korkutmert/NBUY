@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ErtesiGunun_Tarihi/1.0.0": {
+        "runtime": {
+          "ErtesiGunun_Tarihi.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ErtesiGunun_Tarihi/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
