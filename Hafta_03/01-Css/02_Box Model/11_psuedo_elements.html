@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo_elements</title>
+    <style>
+        p::first-line{
+      /* Tüm p'lerin İLK SATIRLARRINA burdaki kodları uygular  */   
+      font-weight: bold;
+      color: red;
+      word-spacing: 10px;/* Kelimeler arası boşluğu ayarlama komutu*/
+       letter-spacing: 5px;/* Harfler arası boşluğu ayarlama komutu*/
+        }
+
+ /*-------------------------------------------------------------------------------------------------*/      
+        
+        p.myClass::first-line{
+             color: green;   
+        }
+
+/*------------------------------------------------------------------------------------*/
+
+        p.myClass::first-letter{  /*İLK HARF büyütür */
+            font-size: 48px;
+        }
+/*-------------------------------------------------------------------------------------------------*/
+        ::selection{
+            background-color: yellow;
+            color: navy;
+            font-weight: bold;  /*Etki etmez.*/
+            font-size: 30px;    /*Etki etmez.*/
+        }
+/*-------------------------------------------------------------------------------------------------*/        
+        p::after{
+            content: "Bu yeni eklendi";
+            font-size: 22px;
+        }
+        p::before{
+            content: "Bu before ile yapıldı";
+            font-size: 22px;
+        }
+ /*------------------------------------------------------------------------------*/   
+    </style>
+
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum tenetur incidunt quibusdam cum nulla hic sequi eveniet, architecto unde, nobis, corporis beatae distinctio tempora non! Sed a natus dolorem doloremque.</p>
+    <p class="myClass">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius sunt labore repellat quia cum! Exercitationem facilis alias aspernatur qui rem quibusdam voluptates quia dolor nihil tempora, esse explicabo velit perferendis.</p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>combinators</title>  <!--birden fazla elemneti kullanarak class yada id seçme işlemi -->
+    <style>
+       /* Descendant Selecotr */
+       /* div'in içindeki tüm p leri seçer. */
+        /* div p 
+        {
+            background-color: aqua;
+        } */
+
+/*------------------------------------------------------------------------------------------*/
+
+        /* Child Selector */
+        /* Div'in içindeki 2.ve 3. paragraf olan p leri seçer(biz sectirdik > işareti ile). 4. Paragraf section'un childi olduğu için onu etkilemez */
+        /* div > p 
+        {
+            background-color: aqua;
+        } */ 
+        
+        
+/*-------------------------------------------------------------------------------------------------*/  
+    
+
+        /* Adjacent Sibling Selector */
+        /* div + p  /* Div bittikten sonra gelen ilk p'yi seçer yani 5. paragraf yazan p'yi seçmiş olur.
+        {
+            background-color: aqua;
+        } */
+
+
+/* -------------------------------------------------------------------------------------- */
+
+        /* General Sibling Selector */
+        div ~ p  /* Div bittikten sonra gelen bütün p'leri seçer.Yani 5 ve 6. Paragraf olan p'yi seçti. */
+        {
+            background-color: aqua;
+        }
+
+
+    </style>
+
+    </head>
+<body>
+    <p>1.paragraf</p>
+    <div>
+        <p>2.parafgraf</p>
+        <p>3.paragraf</p>
+        <section>
+            <p>4.paragraf</p>
+        </section>
+    </div>
+    <p>5.paragraf</p>
+    <p>6.paragraf</p>
+</body>
+</html>
