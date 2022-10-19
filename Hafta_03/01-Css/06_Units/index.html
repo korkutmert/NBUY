@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- ÖLÇÜ BİRİMLERİ
+        - px
+        - % -> içinde bulunulan elementin boyutun göre ölçü vermeyi sağlar.
+        - cm
+        - mm
+        - in(inç) -> 2.54cm -> 96px
+        - pt (punto)
+        - pc (pika) 1pc->12pt
+        - em (Ana ebeveyn etiketin font boyutuna göre ölçeklendirilerek belirnenen boyuttur.) 
+            Örn: Bir etiketin ana ebeveyni boys ise ve boynin font büyüklüğü 16px ise, bu bodynin içinde 1em dedğimde 16px'e denk gelir.
+        -vh(viewport height)- tarayıcının yüksekliği ile orantılı bir ölçü vermeyi sağlar
+        -vw(viewport width)-tarayicının genişliği ile orantılı ölçü verir.
+        -
+        - 
+    
+    
+                -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        
+        body{
+            display: flex;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 10px;
+
+        }
+        .header, .footer {
+            background-color: blue;
+            padding: 15px;
+            margin-top: 15px;
+            align-items: center;
+            
+        }
+        .footer{
+            height: 60px;
+            color: aliceblue;
+            font-size: 1.5em;
+                        
+        }
+        .conteiner{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+        .header{
+            background-color:chocolate;
+            padding-left: 20px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            
+           
+        }
+        .header h1{
+            color:midnightblue;
+            font-size: 60px;
+            font-size: 6em;
+            
+        }
+        .content{
+            display: flex;
+            margin-top: 10px;
+        }
+        .content-left{
+            width: 25%;
+            font-size: 1.5em;            
+
+             
+        }
+        .content-left ul {
+            list-style: none;
+            margin: 0;
+            padding:0;
+            
+        }
+        .content-left ul li {
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            background-color: #256d85;
+            color:white;
+        }
+        .content-left ul li:hover{
+            cursor: pointer;
+            background-color:navy;
+        }
+        .content-right{
+            width: 75%; 
+            padding-left: 15px;
+            font-size: 1.5em;   
+            
+        }
+        .content-right h1{
+            
+            margin: 0;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="header">
+            <h1>Frontend Dersleri</h1>
+        </div>
+        <div class="content">
+            <div class="content-left">
+                <ul>
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="content-right">
+                <h1>Uygulama Geliştirici Eğitimi</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore deleniti tenetur, veritatis magnam quae commodi voluptatem, quibusdam eos voluptate excepturi quidem, dicta odio! Qui laboriosam voluptate a. Natus, libero quas.</p>
+            </div>
+        </div>
+        <div class="footer">
+            Bu sayfa Bahçeşehir Üniversitesi Wissen Akademie Öğrencileri Tarafından Tasarlanmıştır. 2022
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            display: flex;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .header, .footer {
+            background-color: blue;
+            padding: 15px;
+            margin-top: 15px;
+            align-items: center;
+            
+        }
+        .footer{
+            height: 60px;
+            color: aliceblue;
+            
+        }
+        .conteiner{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+        .header{
+            background-color:chocolate;
+            padding-left: 20px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            
+           
+        }
+        .header h1{
+            color:midnightblue;
+            font-size: 60px;
+            
+        }
+        .content{
+            display: flex;
+            margin-top: 10px;
+            flex-direction: row-reverse;
+            
+        }
+        .content-left{
+            width: 25%;
+             
+        }
+        .content-left ul {
+            list-style: none;
+            margin: 0;
+            padding:0;
+            
+        }
+        .content-left ul li {
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            background-color: #256d85;
+            color:white;
+        }
+        .content-left ul li:hover{
+            cursor: pointer;
+            background-color:navy;
+        }
+        .content-right{
+            width: 75%; 
+            padding-left: 15px;   
+            
+        }
+        .content-right h1{
+            
+            margin: 0;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="header">
+            <h1>Frontend Dersleri</h1>
+        </div>
+        <div class="content">
+            <div class="content-left">
+                <ul>
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="content-right">
+                <h1>Uygulama Geliştirici Eğitimi</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore deleniti tenetur, veritatis magnam quae commodi voluptatem, quibusdam eos voluptate excepturi quidem, dicta odio! Qui laboriosam voluptate a. Natus, libero quas.</p>
+            </div>
+        </div>
+        <div class="footer">
+            Bu sayfa Bahçeşehir Üniversitesi Wissen Akademie Öğrencileri Tarafından Tasarlanmıştır. 2022
+        </div>
+    </div>
+    
+</body>
+</html>
