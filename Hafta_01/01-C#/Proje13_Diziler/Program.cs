@@ -19,14 +19,12 @@ namespace Proje13_Diziler
             // adlar[3] = " ahmet yılmaz";
             // adlar[4] = " ali yıldır";
             // adlar[5] = " ahmet mehmet";
-            //// Console.WriteLine(adlar[0]);
+            // Console.WriteLine(adlar[0]);
 
             // for (int i = 0; i < adlar.Length ; i++)//adlar dizisinin eleman sayısı kadar dön.
             // {
             //     Console.WriteLine(adlar[i]);
             // }
-
-
             //int[] yaslar = new int[3];
 
             //int[] rakamlar = { 56, 89, 90, 45, 33, 55 };

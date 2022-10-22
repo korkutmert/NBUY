@@ -25,7 +25,7 @@ namespace Proje06_MatematikselMetotlar
             //    Console.WriteLine(sonuc);
 
             /* Console.Write("Taban sayıyı giriniz. : ");
-             int taban = Convert.ToInt32(Console.ReadLine());   // readine hep string döndürür. Dönüştürme işlemi gerekli olur.
+             int taban = Convert.ToInt32(Console.ReadLine());   // readLine hep string döndürür. Dönüştürme işlemi gerekli olur.
 
              Console.Write("Üs sayıyı giriniz. : ");
              int us = int.Parse(Console.ReadLine());            // Parse komutu stringi integere cevirdi üsttekiyle ayn islemi yaptı.

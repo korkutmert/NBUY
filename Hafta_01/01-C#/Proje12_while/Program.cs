@@ -17,7 +17,7 @@ class Program
         // {
         //     Console.Write($"{sayac}.sayıyı giriniz(Çıkış için exit): ");
         //     girilenDeger = Console.ReadLine();
-        //     // if (girilenDeger!="exit") toplam += Convert.ToInt32(girilenDeger);
+        //  if (girilenDeger!="exit") toplam += Convert.ToInt32(girilenDeger);
         //     try
         //     {
         //         toplam += Convert.ToInt32(girilenDeger);

@@ -18,7 +18,7 @@ namespace Proje07_TarihMetotlari
 //Console.WriteLine(bugun.ToLongDateString());  // 5 Ekim 2022 Çarşamba
 //Console.WriteLine(bugun.ToLongTimeString());  // 13:35:30
 //Console.WriteLine(bugun.ToShortDateString()); // 5.10.2022
-//Console.WriteLine(bugun.ToShortTimeString()); // 13.35
+//Console.WriteLine(bugun.ToShortTimeString()); // 13.35ü
 
 
 // Bir sonraki yılın ilk gününü buldurma
@@ -44,7 +44,7 @@ namespace Proje07_TarihMetotlari
  * Ö D E V 
  * ertesi günün tarihini bulup ekrana yazdıran programı bulunuz.
  *  DateTime bugun = DateTime.Now;
-Console.WriteLine(bugun+1);    */
+Console.WriteLine(bugun+1);    
 
 
 
