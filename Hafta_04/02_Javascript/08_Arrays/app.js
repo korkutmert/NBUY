@@ -46,8 +46,8 @@
 // console.log(urun1dizi);
 
 
-let ogrenciler =['cemre', 'Melahat' , 'Sema', 'Hasancan'];
-let sonuc;
+// let ogrenciler =['cemre', 'Melahat' , 'Sema', 'Hasancan'];
+// let sonuc;
 // sonuc=ogrenciler.length;
 // sonuc=ogrenciler;
 // sonuc=ogrenciler.toString();
@@ -55,13 +55,30 @@ let sonuc;
 // sonuc=ogrenciler.join('-')
 
 
-ogrenciler[4]='Serhat';
-ogrenciler.push('Aylin');//dizinin sonuna eleman eklemek için PUSH kullanılır
-ogrenciler.pop();//dizinin sonundan eleman silmek için POP kullanılır.
+// ogrenciler[4]='Serhat';
+// ogrenciler.push('Aylin');//dizinin sonuna eleman eklemek için PUSH kullanılır
+// ogrenciler.pop();//dizinin sonundan eleman silmek için POP kullanılır.
 
-sonuc= ogrenciler.push('Aylin');
-sonuc=ogrenciler.pop();//neyi sildiğimizi sonuca aktarıyoruz sonra sonucu ekrana yazdırıyoruz.
-sonuc=ogrenciler.unshift('Aylin');// Dizinin en başına eleman eklemek için kullanılır
+// sonuc= ogrenciler.push('Aylin');
+// sonuc=ogrenciler.pop();//neyi sildiğimizi sonuca aktarıyoruz sonra sonucu ekrana yazdırıyoruz.
+// sonuc=ogrenciler.unshift('Aylin');// Dizinin en başına eleman eklemek için kullanılır
 
-console.log(ogrenciler);
-console.log(sonuc);
+// console.log(ogrenciler);
+// console.log(sonuc);
+
+let sonuc;
+let markalar1 =['mazda', 'toyota', 'mercedes'];
+let markalar2 =['opel', 'bmw',];
+let markalar3 =['ford',];
+
+console.log('Markalar 1 :' + markalar1);
+console.log('Markalar 2 :' + markalar2);
+console.log('Markalar 3 :' + markalar3);
+
+sonuc= markalar1.concat(markalar2,markalar3);//iki diziyi birleştirmek için kullanılır.
+// sonuc=markalar1.splice(0,1);//0. elemandan başla 1 adet sil uygulandı.
+// console.log('Sonuç : ' + sonuc);//ilk hali
+// sonuc.splice(0,4)//sonuc dizisinden 0dan başla 4 adet elemanı sil.
+console.log('Sonuç : ' + sonuc);// silinmiş hali
+
+//silinenleri başka bir diziye tanımlayarak içinden çekmiş gibi olabilirsin.
