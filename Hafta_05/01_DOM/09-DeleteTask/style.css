@@ -1,6 +1,7 @@
 .dropdown-toggle::after{
     display: none;
 }
+
 .task{
     display: flex;
     justify-content: space-between;
