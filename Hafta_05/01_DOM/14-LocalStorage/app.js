@@ -6,6 +6,7 @@ const filters = document.querySelectorAll('.filters span');
 
 let isEditMode = false;
 let editedId;
+
 btnAdd.addEventListener('click', newTask);
 txtTaskName.addEventListener('keypress', function (event) {
     if (event.key == 'Enter') {

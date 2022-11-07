@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #5a64ee;
+
+}
+.container{
+    transform: translate(-50%, -50%);
+
+}
+.box{
+    text-align: center;
+    margin-top: 50px;
+}
+.inputNote{
+    width: 300px;
+    height: 45px;
+    border: 0px;
+    margin-top:90px ;
+}
+.box-header{
+    color: #ffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.plusButton{
+    vertical-align: middle;
+    position: relative;
+    right: 30px;
+    background-color: orangered;
+    color: white;
+    border: 0px ;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.listIndex{
+    position: relative;
+    margin-top: 50px;
+    width: 500px;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    height: 50px;
+}
+.checkButton{
+    height: 50px;
+    width: 35px;
+    background-color: orange;
+    border: 0px;
+    position: relative;
+    right: 4px;
+    color: white;
+    cursor: pointer;
+
+}
+.trashButton{
+    height: 50px;
+    width: 35px;
+    background-color: tomato;
+    color: white;
+    border: 0px;
+    position: relative;
+    right: 8px;
+    cursor: pointer;
+
+}
+.checkButton:hover{
+    background-color:darkorange;
+}
+.trashButton:hover{
+    background-color:red;
+
+}
