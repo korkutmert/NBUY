@@ -1,0 +1,265 @@
+﻿@using BlogApp.Shared.Utilities.Result.ComplexTypes
+@using BlogApp.Entities.Dtos
+@model CategoryListDto
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "Kategoriler Anasayfa";
+}
+@if (Model.ResultStatus == ResultStatus.Success)
+{
+    @*Kategoriler listelenecek*@
+    <div id="modalPlaceHolder" aria-hidden="true"></div>
+    <h1 class="mt-4">Admin Kategoriler</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+        <li class="breadcrumb-item active">Kategoriler</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table mr-1"></i>
+            Kategoriler
+        </div>
+        <div class="card-body">
+            <div class="spinner-border" role="status" style="display:none">
+                <span class="sr-only">Yükleniyor...</span>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered" id="categoriesTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Ad</th>
+                            <th>Açıklama</th>
+                            <th>Aktif mi?</th>
+                            <th>Silinmiş mi?</th>
+                            <th>Not</th>
+                            <th>Oluşturulma Tarihi</th>
+                            <th>Oluşturan Kullanıcı</th>
+                            <th>İşlemler</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @*Kategorileri listeleme döngüsü*@
+                        @foreach (var category in Model.Categories)
+                        {
+                          
+                                <tr name="@category.Id">
+                                    <td>@category.Id</td>
+                                    <td>@category.Name</td>
+                                    <td>@category.Description</td>
+                                    <td>@category.IsActive</td>
+                                    <td>
+                                        @category.IsDeleted
+                                    </td>
+                                        
+                                    
+                                    <td>@category.Note</td>
+                                    <td>@category.CreatedDate.ToShortDateString()</td>
+                                    <td>@category.CreatedByName</td>
+                                    <td>
+                                        <button class="btn btn-warning btn-sm"><span class="fas fa-edit text-white"></span></button>
+                                        <button class="btn btn-danger btn-sm btn-delete" data-id="@category.Id"><span class="fas fa-minus-circle"></span></button> @* Hangi kategoriyi sileceğini bulmak için data-id=categoryId verdik.*@
+                                    </td>
+                                </tr>
+                            
+                            
+                        }
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            //Datatable burada başlıyor
+            //Ekle ve Yenile butonuna tıklandığındaki actionları.
+            $('#categoriesTable').DataTable({
+
+                dom: "<'row'<'col-sm-3'l><'col-sm-6 text-center'B><'col-sm-3'f>>" +
+                    "<'row'<'col-sm-12'tr>>" +
+                    "<'row'<'col-sm-5'i><'col-sm-7'p>>",
+                buttons: [
+                    {
+                        text: 'Ekle',
+                        attr: {
+                            id: 'btnAdd'
+                        },
+                        action: function (e, dt, node, config) {
+
+                        },
+                        className: 'btn btn-success'
+                    },
+                    {
+                        text: 'Yenile',
+                        action: function (e, dt, node, config) {
+                            //Burada yenile butonuna basıldığında Ajax ile içeriğimizi yenileyeceğiz.
+                            $.ajax({
+                                type:'GET', //Table yenileyip veri çekeceğimiz için tipi GET.
+                                url: '@Url.Action("GetAllCategories", "Category")', //CategoryController'daki GetAllCategories adlı action'ı çalıştır
+                                contentType:'application/json', //Json datayla çalışacağımızı belirtiyor.
+                                //Göndermeden önce yapacakları : beforeSend
+                                beforeSend: function(){
+                                    $('#categoriesTable').hide();
+                                    $('.spinner-border').show();
+                                },
+                                //yukarıdaki işlem yani beforeSend başarılıysa success kısmına geçecek.
+                                success: function(data){
+                                    const categoryListDto = jQuery.parseJSON(data);
+                                    console.log(categoryListDto);
+                                    //Tablonun yeni halini yapıyoruz:
+                                    if(categoryListDto.ResultStatus===0){
+                                        let tableBody='';
+                                        $.each(categoryListDto.Categories.$values,
+                                            function(index,category){
+                                            tableBody+=`
+                                                <tr>
+                                                    <td>${category.Id}</td>
+                                                    <td>${category.Name}</td>
+                                                    <td>${category.Description}</td>
+                                                    <td>${convertFirstLetterToUpperCase(category.IsActive)}</td>
+                                                    <td>${convertFirstLetterToUpperCase(category.IsDeleted)}</td>
+                                                    <td>${category.Note ?? ""}</td>
+                                                    <td>${convertToShortDate(category.CreatedDate)}</td>
+                                                    <td>${category.CreatedByName}</td>
+                                                </tr>
+                                            `;
+                                        })
+                                        $('#categoriesTable > tbody').replaceWith(tableBody); //tbody tablosundakileri tableBody tablosu ile değişti.r
+                                        $('.spinner-border').hide(); //spinner border'ı gizle.
+                                        $('#categoriesTable').fadeIn(1500);
+                                    }else{
+                                        toastr.error(`${categoryListDto.Message}`, 'İşlem başarsız!');
+                                    };
+                                },
+                                //Hatalıysa:
+                                error: function(err){
+                                    console.log(err);
+                                    toastr.error(err, 'Başarısız işlem!');
+                                }
+                            });
+                        },
+                        className: 'btn btn-warning'
+                    }
+                ],
+                language: {
+                    url: 'https://cdn.datatables.net/plug-ins/1.13.1/i18n/tr.json'
+                }
+            });
+            //Datatable burada bitiyor
+
+            
+            $(function () {
+                const url = '@Url.Action("Add","Category")';
+                const placeHolderDiv = $('#modalPlaceHolder'); // Ekle butonuna tıklandığında açılacak olan pencere.
+                //Ajax'la partial viewimizi ekrana getirme
+                $('#btnAdd').click(function () { // Ekle butonuna tıklanırsa açılacak pencerenin function:
+                    $.get(url).done(function (data) {
+                        placeHolderDiv.html(data);
+                        placeHolderDiv.find(".modal").modal('show'); // Ekleme penceresinin görünür olması için
+                    });
+                });
+                //Ajax'la (GET) partial viewimizi ekrana getirme BİTTİ
+
+                //Ajax'la POST işlemleri
+                placeHolderDiv.on('click', '#btnSave', function (event) {
+                    //Kaydet butonuna tıklandığında:
+                    event.preventDefault(); // default halini kullanma.
+                    const form = $('#form-category-add'); //id'si form-category-add olan form'u form değişkenine aktar.
+                    const actionUrl = form.attr('action');
+                    const dataToSend = form.serialize(); //serialize = json data dönüştürme.
+                    $.post(actionUrl, dataToSend).done(function (data) {
+                        const categoryAddAjaxModel = jQuery.parseJSON(data); // data'yı json tipine dönüştürüyoruz.
+                        const newFormBody = $('.modal-body', categoryAddAjaxModel.CategoryAddPartial); // önceki form u:
+                        placeHolderDiv.find('.modal-body').replaceWith(newFormBody); //yeni form ile değiştir.
+                        const isValid = newFormBody.find('[name="IsValid"]').val() === 'True'; //IsValid değişkeni 'True' ise isValid değişkenine aktar.
+                        if (isValid) {
+                            //Veri tabanından bütün kategorileri tekrar çekmeden bulunduğumuz yeni eklenen kategoriyi getirmek için girilen kategorinin verilerini çektik.
+                            const newTableRow = `
+                                <tr>
+                                    <td>${categoryAddAjaxModel.CategoryDto.Category.Id}</td>
+                                    <td>${categoryAddAjaxModel.CategoryDto.Category.Name}</td>
+                                    <td>${categoryAddAjaxModel.CategoryDto.Category.Description}</td>
+                                    <td>${convertFirstLetterToUpperCase(categoryAddAjaxModel.CategoryDto.Category.IsActive)}</td>
+                                    <td>${convertFirstLetterToUpperCase(categoryAddAjaxModel.CategoryDto.Category.IsDeleted)}</td>
+                                    <td>${categoryAddAjaxModel.CategoryDto.Category.Note ?? "" }</td>
+                                    <td>${convertToShortDate(categoryAddAjaxModel.CategoryDto.Category.CreatedDate)}</td>
+                                    <td>${categoryAddAjaxModel.CategoryDto.Category.CreatedByName}</td>
+                                </tr>
+                            `;
+                            const newTableRowObject = $(newTableRow);
+                            newTableRowObject.hide(); //newTableRowdaki verileri gizliyor.
+                            $('#categoriesTable').append(newTableRowObject); //Id'si categoriesTable olan tabloda newTableRow un içindeki verileri göster.
+                            newTableRowObject.fadeIn(3000); //Eklenen kategorinin bulunduğu alana 3 saniye geç gelmesi.
+                            toastr.success(`${categoryAddAjaxModel.CategoryDto.Message}`,'Başarılı!'); // Sağ üstte Başarılı! başlıklı zaman içinde kaybolan mesaj kutusu.
+                            placeHolderDiv.find(".modal").modal('hide'); // Ekleme penceresi kaydedildikten sonra kapanması için.
+                        }else{
+                            let summaryText='<br>';
+                            $('#validation-summary > ul > li').each(function(){ //madde madde hataların yazımı.
+                                let liText = $(this).text();
+                                summaryText += `*${liText}<br><br>`;
+                            });
+                            toastr.warning(summaryText, 'Dikkat!'); // Sağ üstte yanlış veri girişi yapıldığında Dikkat! başlıklı zaman içinde kaybolan mesaj kutusu.
+                        }
+                    });
+                });
+                //Ajax'la POST işlemleri bitti.
+            
+                //Ajax'la DELETE işlemleri
+                $(document).on('click', '.btn-delete', function(event) {//Bu dökümanda class ı btnDelete olan butonlara tıklandığında function'ı gerçekleştir.
+                    event.preventDefault(); //Burada butonumuzun tipi submit olmadığı için bunu kullanmasak da olur. Sadece alışkanlık olsun diye yazıyoruz.
+                    const id = $(this).attr('data-id'); //O anda hangi sil butonuna tıklandıysa onun data-id'sini alıp burda belirttiğim id değişkenine atacak.
+                    Swal.fire({
+                        title: 'Silmek istediğinizden emin misiniz?',
+                        text: "İlgili kategori silinecektir.!",
+                        icon: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#3085d6',
+                        cancelButtonColor: '#d33',
+                        confirmButtonText: 'Evet',
+                        cancelButtonText: 'Hayır'
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            //Burada kategorinin silinme işlemleri yapılacak, ardından silinmiştir mesajı gösterilecek.
+                            $.ajax({
+                                type: 'POST',
+                                dataType: 'json',
+                                data:{categoryId:id},
+                                url: '@Url.Action("Delete", "Category")',
+                                success: function(data){
+                                    const result = jQuery.parseJSON(data);
+                                    if(result.ResultStatus === 0){
+                                        Swal.fire({
+                                            title: 'İşlem başarılı!',
+                                            text: 'İlgili kategori silinmiştir.',
+                                            icon: 'success',
+                                            confirmButtonText: 'Tamam'
+                                        });
+                                        const tableRow=$(`[name="${id}"]`); //Name'i 7 olan elementi seç
+                                        tableRow.fadeOut(3000);
+                                    }
+                                    else{
+                                        Swal.fire({
+                                            title: 'Hata Oluştu !',
+                                            text: `${result.Message}`,
+                                            icon: 'error',
+                                            confirmButtonText: 'Tamam'
+                                        });
+                                    }
+                                },
+                                error: function(err){
+                                    toastr.error(err.statusText,'Hata!')
+                                }
+                            })
+                        }
+                    })
+                });
+            });
+        });
+    </script>
+}
