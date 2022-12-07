@@ -1,0 +1,93 @@
+														--SHOPPINGAPP VİSUAL STUDIO AŞAMALARI--
+ 
+ 1- Business , Data , Entity ve Web katmanları oluşturuldu. Web katmanı MVC olacak şekilde ayarlandı.
+ 2- Proje klasöründeki dependecies bölümünden referanslar verildi
+ 3- Entity Katmanında Abstract ve Concrete klasörleri oluşturuldu.
+ 4- Abstarct da Interfaceler olacak. BaseEntitiy oluşturuldu.
+ 5- Concerete de ShoppingApp uygulamasında kullanılacak olan product, category gibi classlarımız tanımlandı içlerinde propertyler yazdılı. Ortak olan özellikler EntityBaseden miras alındı. 
+ 6- Aynı klasörün içine birde Prodcut ve catoegrylerın ortak tabloda yer alacağı için PrductCategory adında bir class daha yapıldı.
+ 7-Data KAtmanında Abstract Concrete ve Config klasörleri oluşturuldu.
+ 8- Config  = mapping olarak da geçtiği için bu sefer böyle verdik.
+ 9- Concrete -> EfCore -> Contexts ->  ==> Burda ShopAppContext Yer Alacak ?
+					   -> Repositories
+ 
+ 10- DATA katmanaına hangi sql sunucusyla çalışıcalksa onun paketleri yuklenir. Sqlite için Microsoft.EntityFrameworkCore.Sqlite ve Microsoft.EntityFrameworkCore.Design Paketleri Yüklendi
+ 11- ShoppAppContext i DbContext'ten miras aldırıdık. Ve içine gerekli kodları yazdık. (Dbset, override onconfig, override onmodelcreat vb. gibi)
+ 12- Config klasöründe CategoryConfig classıı  oluşturuduk
+ 13-Bu classımızı IEntityTypeConfiguration<Category> generic yapsııyla configüre için özel oluşturulmuş ınterfaceden miras adlırıp implemente ettik.
+ 14- Sonra içinde Category 'nin propetylerine ayarlar veriyoruz yani id yi builder.HasKey(c=> c.Id) komutuyla primary key yapmak gibi ve (kodu incele!). Veritabanı için ilk katogrileri de burda oluştruduk
+ 15- Yİne Configin içinde ProductConfig classı oluşturduk ve üstteki işlemleri yaptık.
+ 
+ 16 -*-*-*- CONFİG Klasöri içinde CategoryConfig ve ProductConfigde Veritabanı ekleme İşlemleri yapıldı -*-*-*-*
+ 
+ 17- Config klasöründe ProductCategoryConfig classı oluşturup hangi product hangi category de onu belirleyeceğiz.
+ 18- ShopAppContexe geri gidip configurationları uyguluyoruz. (modelBuilder.ApplyConfiguration)
+ 19- Data katmanına gidip migrationslarımızı oluşturuyoruz ( dotnet ef migrations add InitialDb --startup-project ../ShoppingApp.Web) startup projeyi de belirtlelim.
+ 20- Daha sonra aynı komutu update ederek veriyoruz. (  dotnet ef database update --startup-project ../ShoppingApp.Web) Yine startup projem,zde update ediyoruz.
+ 
+ 
+ 21- Repositoryleri hazrılamak için Önce DATA katmanında  'abstract' klasöründe IRepository adında temel repository ınterfaceini hazırlıyoruz. IProductRepo ve ICategoryRepo bundan miras alcak
+ 22- İçinde CRUD işlemleri için metotlar yazılıyor.   
+ 
+ 23- DATA katmanında  'abstract' klasöründe IProductRepostiry oluşturuldu IRepository ' den IRepository<Product> şeklinde miras aldı.
+ 24- DATA katmanında  'concrete' klasöründen reposiories klasörne ulaıp EfCoreCategoryRepository , EfCoreProductRepository ve EfCoreGenericRepository oluşturudk (class) ve miras aldılar Irepositoryden!!
+ 25- EfCoreGenericRepository de Dependency Injection yaptık dışardan gelen contexi öyle aldık.
+ 
+ 26- Şimdi ise EfCoreGenericRepository deki metotlarımızın içlerini dolduruyoruz.
+ 
+ 27-EfCoreCategoryRepository nin içini dolduruyoruz.  EfCoreGenericRepository<Category> şeklinde ve ICategoryRepositoryden miras adlırıp kulladnırıyoruz.
+ 28-EfCoreProductRepository nin içini dolduruyoruz.  EfCoreGenericRepository<Product> şeklinde ve IProductRepostiry' den miras adlırıp kulladnırıyoruz.
+ 
+ 29- DATA katmanında abstract klasöründe IUnitOfWork ınterfaceini oluşturuyoruz. ve IDisposible ' dan miras aldırıyoruz.
+ 30-DATA katmanında concrete klasörünün içinde UnitOfWork classı oluşturup IUnitOfWork'ten miras aldırıyruz. Dependency Injection yapıyoruz. ve içini dolduruyoruz.
+ 
+ 31- BUSINESS katmanında abstract ve concrete oluşturduk
+ 32- Business -> abstract -> ICategoryService oluşturduk.
+ 33- Business -> abstract -> IProductService oluşturduk.
+ 34-Şimdi bunların içlerini doldurmak için Concrete klasöründe classlarınızı oluşturacağız.
+ 
+ 35- Business -> concrete -> CategoryManager (class) oluşturduk. 
+ 36- Business -> concrete -> ProductManager (class) oluşturduk.   
+ 
+ 37-  üstteki iki satır için ; kendi servicelerinden miras alıp içleri doldururulur.
+ 
+ -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-
+ 38- WEB katmanına git ve temizlik yap
+ 39- WEB katmanında Program.cs de builder.services leri ekle
+ 
+ 40- Home controller'a git ve productManager lazım olduğu için ve biz bir üstte dedğim gibi ekledğimiz serviceslerde söyledğimiz gibi IProductService diyince ProdcutManager anla dedğimiz için koda bakınca göreceğimiz gibi dependecyInjection yaparak aldık.
+ !!!!?????********TASK demek asenkron yapıda işlemcinin parça parça çalışmasını temsil eder. Yani asenkron yapılarda bu kullanılır.!!!!!!!!*******
+ 
+ 
+ 41- HomeController daki indexin içinde GetAllAsync ile geri Product listesi döneceği için  önce onları boş bir productDtos listesi oluşturup sonra foreach döngüsü içinde  '''productDtos.Add(new ProductDto{buraya dönüşecekler yazıldı})'''' komutuyla productstan ProductDto ya dönüştürüdk ve Home indexte modele @model List<ProductDto> dedik
+ 
+ 42- WEB katmanındaki models klasörünün içinde DTOS klasötü oluştur.
+ 43- DTOS klasöürünün içine productları listelemek için kullancağımız 'ProductDto' classımızı oluşturduk. ve içini dolduruduk.
+ --------->> (İZLE)   https://app.patika.dev/courses/net-core/2-viewmodel-ve-dto-kavrami#:~:text=DTO%20(Data%20Transfer%20Object)&text=View%20model%20son%20kullan%C4%B1c%C4%B1ya%20g%C3%B6sterilecek,gelen%20veriyi%20source%20olarak%20kullan%C4%B1r.----------------
+ 
+ 
+ 44- 41.Adımdan sonra indexe geldik ve ProductDto daki bilgilerimizi ekrana yazdırdık. Bunu şimdilik geçici olarak ındex actionında yapıyoruz değişecek.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
