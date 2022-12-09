@@ -5,7 +5,7 @@
  3- Entity Katmanında Abstract ve Concrete klasörleri oluşturuldu.
  4- Abstarct da Interfaceler olacak. BaseEntitiy oluşturuldu.
  5- Concerete de ShoppingApp uygulamasında kullanılacak olan product, category gibi classlarımız tanımlandı içlerinde propertyler yazdılı. Ortak olan özellikler EntityBaseden miras alındı. 
- 6- Aynı klasörün içine birde Prodcut ve catoegrylerın ortak tabloda yer alacağı için PrductCategory adında bir class daha yapıldı.
+ 6- Aynı klasörün içine birde Prodcut ve categorylerin ortak tabloda yer alacağı için PrductCategory adında bir class daha yapıldı.
  7-Data KAtmanında Abstract Concrete ve Config klasörleri oluşturuldu.
  8- Config  = mapping olarak da geçtiği için bu sefer böyle verdik.
  9- Concrete -> EfCore -> Contexts ->  ==> Burda ShopAppContext Yer Alacak ?
@@ -59,7 +59,7 @@
  !!!!?????********TASK demek asenkron yapıda işlemcinin parça parça çalışmasını temsil eder. Yani asenkron yapılarda bu kullanılır.!!!!!!!!*******
  
  
- 41- HomeController daki indexin içinde GetAllAsync ile geri Product listesi döneceği için  önce onları boş bir productDtos listesi oluşturup sonra foreach döngüsü içinde  '''productDtos.Add(new ProductDto{buraya dönüşecekler yazıldı})'''' komutuyla productstan ProductDto ya dönüştürüdk ve Home indexte modele @model List<ProductDto> dedik
+ 41- HomeController daki indexin içinde GetAllAsync ile geri Product listesi döneceği için  önce onları boş bir productDtos listesi oluşturup sonra products olarak oluşturuduğumuz listedeki elemanları <foreach döngüsü içinde  '''productDtos.Add(new ProductDto{buraya dönüşecekler yazıldı})'''' komutuyla productstan ProductDto ya dönüştürüdk ve Home indexte modele @model List<ProductDto> dedik
  
  42- WEB katmanındaki models klasörünün içinde DTOS klasötü oluştur.
  43- DTOS klasöürünün içine productları listelemek için kullancağımız 'ProductDto' classımızı oluşturduk. ve içini dolduruduk.
@@ -68,7 +68,68 @@
  
  44- 41.Adımdan sonra indexe geldik ve ProductDto daki bilgilerimizi ekrana yazdırdık. Bunu şimdilik geçici olarak ındex actionında yapıyoruz değişecek.
  
+ 45- ----
+ 46- _ProductPartial da resimler eklendi ve para birimi ve tarihin formatları düzeltildi. Görselleştirme yapıldı.(İncele, sepete ekle butonu vs.)
+ 47-Indexte row col yapıları oluşturup sol tarafta kategorilerin listeneleceği bölümü ayalradık.
+ 48- WEB katmanında Views Component  klasörü oluşturduk
+ 49- Views -> Shared -> components-> category-> default.cshtml oluşturuduk
+ 50---
  
+ 51- Kategorilere product gelecek metotlar yazılıyor shopContoroller olulturuldu
+ 
+ 
+ ---
+ 
+ 
+ 
+ 09-12--
+ 
+ Admin Panelinde Category bölümüünde Yeni kategori ekleme butonunu hazırlama
+ 
+ - Index.cshtml e gelip yeni kategori ekle butonunu button dan a ' ya çevirip asp lerini veriyoruz.
+ Örn :  asp-area="Admin"  asp-controller="Category" asp-action="Create" dedik Create actionunu oluşturacağız. burda 
+ verdiğimiz bilgiler şu demek -> benimsitem.com/Admin/Category/Create bunu hrefle de yapabilirdik ama bu yol daha verimli.
+ 
+ -- Create actionunu CategoryControllerda oluşturduk. Ancak HttpGet yaparak oluşturuduk. 
+ -- Add view diyerek viewsini Create.cshtml olarak oluşturuyoruz.
+ -- Admin -> Models -> Dtos un içinde CategoryAddDto oluşturduk. Çünkü;
+ Create.cshtm de yazacağımız bilgilerden yeni kategoeri oluştururken name ve descp. bilgileri yeni bilgi olarak gitsin iye onun üzerinden göndereceğiz.
+ -- Create.cshmtl içinde @model CategoryAddDto olrak veriyoruz. bir üstte söyledğim gibi.
+ Daha sonra bir ekleme formu oluşturacağımız için <form> verip asplerini yazıyoruz.
+ Forma bootstraptan yayralrnıp form görüntüsü verdik.
+ Labelin içine asp-for ="Name" verdik ve CategoryAddDto'ya gidip name propertysine display ve validation özellikleri verdik.
+ İnputa da asp-for : name verdik. Bu yapılanlar Name bilgisi içindi aynısını Description içinde yaptık.
+ 
+ CategoryControllere gidip Create metodunun Post halini oluşturduk ve ;
+	 [HttpPost]
+        public async Task<IActionResult> Create(CategoryAddDto categoryAddDto) parantez içinde Create.html de model olrak 
+			CategoryAddDto verdiğimiz için burda da onu karşılıyor.
+				formun içinde verdiğimiz asp-for ' lar Name ve Description ile eşleşip geliyor.
+			Yine create'in post halinde categoryService.CreateAsync() yapacağız ama categoryAddDto tipinde olmak zorunda ve bunu yollayamadığımızdan dolayı
+					bunun için category adında değişken oluşturup içindekileri ona atıyoruz ve category tipinde yolluyoruz artık category nin içinde de categoryAdd tipinde veriler var!.
+	
+	Solutions dosyasında ShoppingApp.Core katmanı oluşturuyoruz. 
+	İçinde özel işlerin yapılcağı Jobs classı oluturuldu ve sürekli newlenememsi için Static yapıldı.
+		Yani gelen urlleri özelleştirmek için InitUrl metodu hazrılayıruz. boşlukları silme vb. gibi
+WEB katmanında CORE katmanını kullanacağım için referans verdik.
+	Sonra category controller'a geri dönüp Url bilgisine Jobs.InitUrl(categoryAddDto.Name) yazdık. bir üstte hazırladığımız metodu gelen Name'e vermiş olduk.
+	
+                
+	Kayıt yatıktan sonra tekrar aynı sayfaya gitmek istedğimiz için  return RedirectToAction("Index"); yazdık.
+	
+	Şmdi Düzenle ve Sil butonları için asp düzenlemeelri yapıldı ve action oluşturulacak CategoryController' da.
+	Dzüenle butonuna verdiğimiz asp-route-id="@category.Id" komutu bu butona tıkladığımızda o tıkladğımız categorynin bilgilerini göndermesi için hazırlandı.
+	Daha sonra Düzenle butonu içinde CategoryUpdateDto oluşturudk. Ve içie AddDto dan farklı Url ve Id(ıd ye göre harket edecek) bilgisi ekledik
+	
+	CategoryAddDto daki işlemlerin aynısnı yaptık.
+	
+	
+	
+	
+	
+		
+ 
+
  
  
  
