@@ -1,0 +1,50 @@
+﻿@model ProductAddDto
+
+<h1>Yeni Ürün Ekleme</h1>
+
+<hr />
+<form asp-area="Admin"
+      asp-controller="Product"
+      asp-action="Create"
+      method="post">
+    <div class="row">
+        <div class="col-8">
+        
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label"> </label>
+                <input class="form-control" asp-for="Name">
+                <span class="text-danger" asp-validation-for="Name"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Price" class="form-label"> </label>
+                <input class="form-control" asp-for="Price">
+                <span class="text-danger" asp-validation-for="Price"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="ImageFile" class="form-label"> </label>
+                <input type="file" asp-for="ImageFile" accept="image/" />
+                <span class="text-danger" asp-validation-for="ImageFile"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description" class="form-label"> </label>
+                <input class="form-control" asp-for="Description">
+                <span class="text-danger" asp-validation-for="Description"></span>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Kaydet</button>
+        </div>
+        <div class="col-4">
+            <div>
+                <label class="form-check-label" asp-for="Categories"></label>
+            </div>
+            @foreach (var category in Model.Categories)
+            {
+                <div>
+                    <input type="checkbox" class="form-check-input"/>
+                    <label>@category.Name</label>
+                </div>
+            }
+        </d>
+    </div>
+</form>

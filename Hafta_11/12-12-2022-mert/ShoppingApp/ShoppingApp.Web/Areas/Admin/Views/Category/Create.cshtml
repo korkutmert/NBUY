@@ -1,0 +1,28 @@
+﻿@model CategoryAddDto
+
+<h1>Yeni Kategori Ekleme</h1>
+
+
+<form 
+    asp-area="Admin"
+    asp-controller="Category"
+    asp-action="Create"
+>
+    <div class="row">
+        <div class="col-4">
+            <hr />
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label"> </label>
+                <input  class="form-control" asp-for="Name">
+               <span class="text-danger" asp-validation-for="Name"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description" class="form-label"> </label>
+                <input class="form-control" asp-for="Description">
+                <span class="text-danger" asp-validation-for="Description"></span>   
+            </div>
+          
+            <button type="submit" class="btn btn-primary">Kaydet</button>
+        </div>
+    </div>
+</form>

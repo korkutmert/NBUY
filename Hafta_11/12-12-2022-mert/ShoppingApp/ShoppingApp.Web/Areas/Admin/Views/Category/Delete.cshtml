@@ -1,0 +1,29 @@
+﻿@model CategoryDeleteDto
+
+<h1>Kategoriyi Sil</h1>
+
+
+<form asp-area="Admin"
+      asp-controller="Category"
+      asp-action="Delete"
+      method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <div class="row">
+        <div class="col-4">
+            <hr />
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label"> </label>
+                <input class="form-control" disabled asp-for="Name">
+                <span class="text-danger" asp-validation-for="Name"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description" class="form-label"> </label>
+                <input class="form-control" disabled asp-for="Description">
+                <span class="text-danger" asp-validation-for="Description"></span>
+            </div>
+
+    
+            <button type="submit" class="btn btn-danger">Sil</button>
+        </div>
+    </div>
+</form>

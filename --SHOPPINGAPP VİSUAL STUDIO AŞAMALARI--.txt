@@ -129,16 +129,53 @@ WEB katmanında CORE katmanını kullanacağım için referans verdik.
 	
 		
  
+----12-12-------
+
+Bir formda , resim sunucuya upload edilmek isteniyorsa ilgili forma gidip enctype="multipart/form-data" özelliği altif edilmelidir.
+
+CORE katmanında jobs un içinde resim upload etmek için kodlar yazıldı.
+
+ Path komutuyla randomname ler oluşturuyoruz. Siteye yüklenen resmin daha önce aynı isimde olma ihtimali olduğu için random olarak kendisine verdiriyouz.
+  
+  extension : Eklenen resmin uzantısını alır Örn : .png
+  
+  guide : Random retilenle .png kısmını yan yana ekler yani birleştirir.
+ 
+ 
+ 
+ 
+ 
+ 
+ 14-12---
+ 
+ Ürün eklerken bir hata oluştuğunda hatayı bize veriyor ancak resim gidiyor. Her defasında resim seçmek zorunda kalıyoruz bunu düzelteceğiz;
+ 
+ 
+ LAyotulara ve _validationScriptsPArtiallara jquery nin ------jquery-validation-unobtrusive--- ve ---jquery-validate--- eklendi Birde jquery nin normal cdn i eklendi.
+ Daha sonra Productın Edit kısmında Dosya ekleme kısmına gelip bir label ekliyoruz. for diyip içine resim eklemek için kullanılan inputun Id'sini vererek onun gibi davranmasını sağlıyoruz.
+ Sonr asayfnın en altına inip script kodları yazıyoruz.
+ 
+   İmg file label ve inputumuza verdiimiz Id leri   const imgUrl = document.getElementById('img-url');  şeklinde değişkenlere atıyoruz.
+   
+   ProductUpdateDto ' da ImageFıledaki required özelliğini kaldırıdk. Çünkü Edit dediğimizde zaten içinde resim var olarak geliyor.
+   
+    ProdcutController 99. satır => required 'ı kaldırdıktan sonra ımageUrl null geiyordu bununn için kontrol edip öyle yazdık.
+   
+   // ÖDEEEVV : Resim yükle deyip, resim seçilmezse (iptale basılırsa ) Kaydetme sırasında hata alınıyor. Bu hatayı giderecek çalışmayı yapıp, 15.12 saat 22.00
+   // 	tarihine kadar Ödev deposuna "Mert_Korkut_Muslu_Ödev15.12.2022" şeklinde gönder.
+   
+   
+	
+JavaScriptte İnputu submit özelliği vermek yani onaylı mı butonuna tıkladığımızda onu kaydetmesi için yazılan kod -->admin-Product-Index 33-45. Satırlar
+Burda UpdateIshome metodunu hazırlamak için;
+1- IProductRepostiry'e git imza at -->  Task UpdateIsHomeAsync(Product product);
+2- EfCoreProductRepository ' e git ve kontratın içini doldur. 
+3- Web katmanında business katmanını çağırdığımız için şimdi Business katmanına git ve IProductService'de ki karşıklarını yaz.
+4- ProductManagere ' e git ve içini doldur.
+
 
  
- 
- 
- 
- 
- 
- 
- 
- 
+
  
  
  
