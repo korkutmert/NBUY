@@ -175,10 +175,25 @@ Burda UpdateIshome metodunu hazırlamak için;
 
 
  
+15-12------- IDENTITY-------------
 
+Üyelik sistemi uygulamaya entegre edilecek. Satış işlemleri için.
+
+ builder.Services.AddControllersWithViews(); Paketi DATA WEB ENTITY katmanları yüklendi
+ program.cs'e gelip scop eklemeleri yapıldı.
+
+Program.cs builder.Services.Configure<IdentityOptions> komutuyla gerrekli ayarlar verildi mesela password de mutlaka rakam olsun vb.
  
  
+ WEB katmanında Controller ın içinde AcoountController oluşturuldu.
  
+AccountController ' da öncelikle fieldlar tanımlandı """""Private readonly UserManager<User> _userManager"""""
+													 """""private readonly SignInManager<User> _signInManager;""""  ve daha sonra dependecyInjection yapıldı.
+
+AccountController' da Login metodu yazıldı ve post hali de kodlandı.
+AccountController' da Register motedu hazrıladnı viewei eklendi.
+AccountController' da Login metodunun viewei eklendi.
+													
  
  
  
