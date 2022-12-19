@@ -193,14 +193,74 @@ AccountController ' da öncelikle fieldlar tanımlandı """""Private readonly Us
 AccountController' da Login metodu yazıldı ve post hali de kodlandı.
 AccountController' da Register motedu hazrıladnı viewei eklendi.
 AccountController' da Login metodunun viewei eklendi.
-													
+
+ASP-VALİDATİON-SUMMARY="ALL" modeldeki tüm hatalı yazar.
  
  
  
+ 16-12-----------
+ 
+ builder.configuration. diyerek appseringsjson da tanımlanan port host , coneciton string gibi ifadeleri çekebilriiz. (bkz : Progra.cs 65)
  
  
  
+ 19-12------
  
- 
- 
- 
+
+ Identity contextte Identity pakrtinin bize verdiği Role ' e ek olarak Descpriton ekledik. 
+ Bunun için düzeltmeler yaptık ; Data- Concrete-Contrxts-EfcoreIdentityCotexte gidip <User, ROLE, STİRNG> ekledik. string burda user ve rolllerin birniriler bağlantı kuracağı primary key in tipi.
+								sonra program cs e gidip   builder.Services.AddIdentity<User, Role>()     buraya bizz ekstra olrak user ve role da ekleme ve değişiklik yaptık dedik. Yani Identiry paketinin bize verdiğine ek olarak.!                                                                             
+	
+
+	 cONTEXTE DEĞİŞİLİK YAPIYOLIYORSA MIGRATİONSLARI GÜNCELLE
+	 dotnet ef migrations add AddRole --startup-project ../ShoppingApp.Web --context IdentityContext 
+	  dotnet ef database update --startup-project ../ShoppingApp.Web --context IdentityContext
+	
+	
+			yaptık.
+ Yani Bu işlem sonucunda veri tabanında da görüleceği gibi, USerRoles tablosuna description eklendi
+		
+
+
+
+RoleEditDto oluşturudk. içine verdiğimiz bikgiler edit actionun post metodunda karşılancaklar olarak yazıldı. Yani
+		        public IActionResult Edit(RoleEditDto roleEditDto) parantez içine yazdığımız bu actonun viewinde ki inputlara name olarak verdiğimiz			
+						veriler. Onları karşılaması lazım olduğu için parantez içine oluşturudupumuz roleEditDto yazdık ve içine inputtaki nameleri yazdık. eşleşmiş oldular.
+						
+
+
+
+
+
+
+login olan adminse değişikleri kaydeebilsin
+				user kaydedemesin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+ ödevler :    	//ÖDEV: Eğer hesap onaylı değilse burada kullanıcıya "Onay linki gönder" şeklinde bir buton gözüksün. Ve bu butona basıldığında tekrar onay maili yollansın.
+			  
+				//ÖDEV: Eğer kullanıcı adı değiştirilmişse sağ üst köşedeki username bölümünün güncellenmesini JavaScript kodları yazarak sağlayınız.
+			 
+			 
+			 
