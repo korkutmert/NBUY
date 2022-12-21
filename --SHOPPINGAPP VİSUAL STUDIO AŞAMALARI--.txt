@@ -238,7 +238,8 @@ login olan adminse değişikleri kaydeebilsin
 
 
 
-
+20-12--------------
+22Wi553NT3Ch
 
 
 
@@ -262,5 +263,9 @@ login olan adminse değişikleri kaydeebilsin
 			  
 				//ÖDEV: Eğer kullanıcı adı değiştirilmişse sağ üst köşedeki username bölümünün güncellenmesini JavaScript kodları yazarak sağlayınız.
 			 
-			 
+			    // ÖDEV: Roller ve kullanıcılar ile ilgili silme işlemlerini tamalayın.
+				
+				// ÖDEV : Butonu koşula bağla.(Rol atama )
+				// ÖDEV : Pasword
+				
 			 
