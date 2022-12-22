@@ -243,7 +243,8 @@ login olan adminse değişikleri kaydeebilsin
 
 
 
-
+22-12--
+Asqueryable()==> "execute etmeden önce bekle kontrol yapılacak " demek 
 
 
 
