@@ -1,0 +1,44 @@
+﻿
+@model OrderListDto
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalOrderDetail_@Model.">
+    Sil
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modalOrderDetail_@Model.OrderId" tabindex="-1" aria-labelledby="modalLabelOrderDetail_@Model.OrderId" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabelOrderDetail_@Model.OrderId">Dikkat!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <img src="~/images/@Model." width="135" />
+                </div>
+                <div class="mt-3 ms-1">
+                    @{
+                        OrderListItemDto orderListItemDto = new OrderListItemDto();
+                    }
+                    <strong>@orderListItemDto.ProductName</strong> 
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+               
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+@*<a class="btn btn-danger btn-sm"
+   asp-area="Admin"
+   asp-controller="Product"
+   asp-action="Delete"
+   asp-route-id=@Model.OrderNumber>Sil</a>*@

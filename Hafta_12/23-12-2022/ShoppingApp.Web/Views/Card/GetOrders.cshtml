@@ -1,0 +1,26 @@
+﻿@model List<OrderListDto>
+<h1 class="display-6">Siparişlerim</h1>
+<hr />
+<table class="table table-bordered table-sm">
+    <thead>
+        <tr class="bg-danger">
+            <th>Sipariş Numarası</th>
+            <th>Tarih</th>
+            <th>Sipariş Toplam </th>
+            <th>Sipariş Detayı</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.OrderNumber</td>
+                <td>@order.OrderDate.ToShortDateString()</td>
+                <td>@($"{order.TotalPrice():C0}")</td>
+                <td>
+                    @await Html.PartialAsync("_OrderDetailsPartial",order)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
