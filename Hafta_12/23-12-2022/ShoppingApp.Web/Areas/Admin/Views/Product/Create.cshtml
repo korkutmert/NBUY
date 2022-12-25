@@ -20,7 +20,7 @@
             </div>
             <div class="mb-3">
                 <img id="img-viewer" src="" />
-                <input type="file" asp-for="ImageFile" accept="image/" />
+                <input type="file" class="d-none" asp-for="ImageFile" accept="image/" />
                 <div>
                     <label for="ImageFile" class="btn btn-success">Resim Yükle</label>
                     <label id="img-url">@Model.ImageUrl</label>
@@ -89,10 +89,14 @@
 
     imgFile.addEventListener('change', function (event) {
         const files = event.target.files;
-        imgViewer.setAttribute('src', window.URL.createObjectURL(files[0]));
+        imgViewer.setAttribute('srcs', window.URL.createObjectURL(files[0]));
         //imgUrl.innerText=imgViewer.getAttribute('src');
         imgUrl.innerText = files[0].name;
     });
+    if(imgViewer.value.length)
+    {
+        alert('Files Loaded');
+    }
     //ÖDEV:
     //Resim Yükle deyip, resim seçilmezse(İptale basılırsa) Kaydetme sırasında hata
     //alınıyor. Bu hatayı giderecek çalışmayı yapıp, 15.12.2022 saat 22:00'e kadar

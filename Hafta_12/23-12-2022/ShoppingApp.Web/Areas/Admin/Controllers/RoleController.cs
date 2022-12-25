@@ -189,5 +189,20 @@ namespace ShoppingApp.Web.Areas.Admin.Controllers
             return View("UserRoles",userRolesDto);
 
         }
+
+        
+       public async Task<IActionResult> DeleteRole(string id)
+        {
+            var role = await _roleManager.FindByIdAsync(id);
+            var result = await _roleManager.DeleteAsync(role);
+            if(result.Succeeded)
+            {
+                TempData["Message"]=Jobs.CreateMessage("Başarılı",role.Name + " rolü, başarıyla silinmiştir. ","success");
+            return RedirectToAction("Index");
+            }
+            return View ("Index");
+
+        }
+
     }
 }
