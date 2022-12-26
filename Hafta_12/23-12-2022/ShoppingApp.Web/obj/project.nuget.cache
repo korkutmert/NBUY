@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4EEsG928VRE2FSKLmHWj6FFNN361YrKmYE/IRnMOyw6zK6kx8UGQMdNAZJXJ2tQdP4mm1eKMemAF2UFEMq56Vg==",
+  "dgSpecHash": "0it95Y8NgFu526F90WjWfP6/Bk/vOcNwObinc2cZ7dTyBPH4+ckpb9ffSEsTxP4q6SI05pEbFSO30yTpHCjeJQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dell\\Desktop\\YAZYAZ\\NBUY\\Hafta_12\\23-12-2022\\ShoppingApp.Web\\ShoppingApp.Web.csproj",
+  "projectFilePath": "c:\\Users\\Dell\\Desktop\\YAZYAZ\\NBUY\\Hafta_12\\23-12-2022\\ShoppingApp.Web\\ShoppingApp.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dell\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\iyzipay\\2.1.53\\iyzipay.2.1.53.nupkg.sha512",

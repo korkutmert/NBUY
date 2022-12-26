@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dell\\Desktop\\YAZYAZ\\NBUY\\Hafta_12\\23-12-2022\\ShoppingApp.Entity\\ShoppingApp.Entity.csproj": {}
+    "c:\\Users\\Dell\\Desktop\\YAZYAZ\\NBUY\\Hafta_12\\23-12-2022\\ShoppingApp.Entity\\ShoppingApp.Entity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dell\\Desktop\\YAZYAZ\\NBUY\\Hafta_12\\23-12-2022\\ShoppingApp.Entity\\ShoppingApp.Entity.csproj": {
+    "c:\\Users\\Dell\\Desktop\\YAZYAZ\\NBUY\\Hafta_12\\23-12-2022\\ShoppingApp.Entity\\ShoppingApp.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dell\\Desktop\\YAZYAZ\\NBUY\\Hafta_12\\23-12-2022\\ShoppingApp.Entity\\ShoppingApp.Entity.csproj",
+        "projectUniqueName": "c:\\Users\\Dell\\Desktop\\YAZYAZ\\NBUY\\Hafta_12\\23-12-2022\\ShoppingApp.Entity\\ShoppingApp.Entity.csproj",
         "projectName": "ShoppingApp.Entity",
-        "projectPath": "C:\\Users\\Dell\\Desktop\\YAZYAZ\\NBUY\\Hafta_12\\23-12-2022\\ShoppingApp.Entity\\ShoppingApp.Entity.csproj",
+        "projectPath": "c:\\Users\\Dell\\Desktop\\YAZYAZ\\NBUY\\Hafta_12\\23-12-2022\\ShoppingApp.Entity\\ShoppingApp.Entity.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dell\\Desktop\\YAZYAZ\\NBUY\\Hafta_12\\23-12-2022\\ShoppingApp.Entity\\obj\\",
+        "outputPath": "c:\\Users\\Dell\\Desktop\\YAZYAZ\\NBUY\\Hafta_12\\23-12-2022\\ShoppingApp.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config"
