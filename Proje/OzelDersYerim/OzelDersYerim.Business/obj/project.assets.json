@@ -1,0 +1,109 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "OzelDersYerim.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "OzelDersYerim.Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OzelDersYerim.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OzelDersYerim.Data.dll": {}
+        }
+      },
+      "OzelDersYerim.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/OzelDersYerim.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OzelDersYerim.Entity.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OzelDersYerim.Data/1.0.0": {
+      "type": "project",
+      "path": "../OzelDersYerim.Data/OzelDersYerim.Data.csproj",
+      "msbuildProject": "../OzelDersYerim.Data/OzelDersYerim.Data.csproj"
+    },
+    "OzelDersYerim.Entity/1.0.0": {
+      "type": "project",
+      "path": "../OzelDersYerim.Entity/OzelDersYerim.Entity.csproj",
+      "msbuildProject": "../OzelDersYerim.Entity/OzelDersYerim.Entity.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "OzelDersYerim.Data >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\SABAH\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Proje\\OzelDersYerim\\OzelDersYerim.Business\\OzelDersYerim.Business.csproj",
+      "projectName": "OzelDersYerim.Business",
+      "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Proje\\OzelDersYerim\\OzelDersYerim.Business\\OzelDersYerim.Business.csproj",
+      "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Proje\\OzelDersYerim\\OzelDersYerim.Business\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Proje\\OzelDersYerim\\OzelDersYerim.Data\\OzelDersYerim.Data.csproj": {
+              "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Proje\\OzelDersYerim\\OzelDersYerim.Data\\OzelDersYerim.Data.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

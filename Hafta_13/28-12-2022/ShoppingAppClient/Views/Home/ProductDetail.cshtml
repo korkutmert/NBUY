@@ -1,0 +1,25 @@
+﻿@model ProductViewModel
+
+<h1>Ürün Detay</h1>
+<input type="hidden" name="productId" value="@Model.Id" />
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Resim</th>
+            <th>Ürün Adı</th>
+            <th>Fiyatı</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>@Model.Id</td>
+            <td>
+                <img src="http://localhost:5200/images/@Model.ImageUrl" width="50">
+            </td>
+            <td>@Model.Name</td>
+            <td>@Model.Price</td>
+        </tr>
+    </tbody>
+</table>

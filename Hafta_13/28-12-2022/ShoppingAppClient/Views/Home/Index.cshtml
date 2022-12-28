@@ -1,0 +1,40 @@
+﻿@model List<ProductViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1 class="display-6">Ürün Listesi</h1>
+
+<table class="table table-sm table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Resim</th>
+            <th>Ürün Adı</th>
+            <th>Fiyatı</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>
+                    <img src="http://localhost:5200/images/@item.ImageUrl" width="50">
+                </td>
+                <td>@item.Name</td>
+                <td>@($"{item.Price:C0}")</td>
+                <td>
+                    <a class="btn btn-primary"
+                   asp-controller="Home"
+                   asp-action="ProductDetail"
+                    asp-route-id="@item.Id">
+                        Detay
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
