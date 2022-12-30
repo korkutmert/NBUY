@@ -28,4 +28,4 @@ namespace ShoppingApp.Data.Concrete.EfCore.Context
             modelBuilder.ApplyConfiguration(new ProductCategoryConfig());
         }
     }
-}
+} 

@@ -49,7 +49,7 @@ namespace ShoppingApp.Data.Config
                   Name = "Samsung S21",
                   Price = 34500,
                   Description = "Kamerası son teknoloji, 5G !",
-                  ImageUrl = "2.png",
+                  ImageUrl = "2.png",   
                   Url = "samsung-s21",
                   IsHome = false,
                   IsApproved = true
