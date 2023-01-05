@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jMS140BetY9JsO3cUHXqbMg8Xc3BbeXpkalFYN8md39XjBmfmTTq7qPjSvR/7ocTf1LV5kJFGy5JXYRdcLWJOg==",
+  "dgSpecHash": "4G/pwAomxCVfHlcL1VT33zwxvQ+AJB0fHMirGNqN9YOsayGfvygziXd9uoyiFAT/SIv897FsfvyENRP01dRQFQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_12\\26-12-2022\\ShoppingApp.Web\\ShoppingApp.Web.csproj",
+  "projectFilePath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_13\\_26-12-2022 - SqlLite bitiş\\ShoppingApp.Web\\ShoppingApp.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SABAH\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\SABAH\\.nuget\\packages\\iyzipay\\2.1.53\\iyzipay.2.1.53.nupkg.sha512",

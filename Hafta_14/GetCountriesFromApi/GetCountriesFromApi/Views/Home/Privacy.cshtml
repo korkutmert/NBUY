@@ -1,0 +1,30 @@
+﻿@model List<User>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Email</th>
+            <th>Profil Fotoğrafı</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.first_name</td>
+                <td>@item.last_name</td>
+                <td>@item.email</td>
+                <td>
+                    <img src="@item.avatar" width="120">
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+

@@ -25,7 +25,7 @@
  19- Data katmanına gidip migrationslarımızı oluşturuyoruz ( dotnet ef migrations add InitialDb --startup-project ../ShoppingApp.Web) startup projeyi de belirtlelim.
  20- Daha sonra aynı komutu update ederek veriyoruz. (  dotnet ef database update --startup-project ../ShoppingApp.Web) Yine startup projem,zde update ediyoruz.
  
- 
+
  21- Repositoryleri hazrılamak için Önce DATA katmanında  'abstract' klasöründe IRepository adında temel repository ınterfaceini hazırlıyoruz. IProductRepo ve ICategoryRepo bundan miras alcak
  22- İçinde CRUD işlemleri için metotlar yazılıyor.   
  
@@ -40,7 +40,8 @@
  
  29- DATA katmanında abstract klasöründe IUnitOfWork ınterfaceini oluşturuyoruz. ve IDisposible ' dan miras aldırıyoruz.
  30-DATA katmanında concrete klasörünün içinde UnitOfWork classı oluşturup IUnitOfWork'ten miras aldırıyruz. Dependency Injection yapıyoruz. ve içini dolduruyoruz.
- 
+  
+  
  31- BUSINESS katmanında abstract ve concrete oluşturduk
  32- Business -> abstract -> ICategoryService oluşturduk.
  33- Business -> abstract -> IProductService oluşturduk.
@@ -54,7 +55,7 @@
  -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-
  38- WEB katmanına git ve temizlik yap
  39- WEB katmanında Program.cs de builder.services leri ekle
- 
+ ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
  40- Home controller'a git ve productManager lazım olduğu için ve biz bir üstte dedğim gibi ekledğimiz serviceslerde söyledğimiz gibi IProductService diyince ProdcutManager anla dedğimiz için koda bakınca göreceğimiz gibi dependecyInjection yaparak aldık.
  !!!!?????********TASK demek asenkron yapıda işlemcinin parça parça çalışmasını temsil eder. Yani asenkron yapılarda bu kullanılır.!!!!!!!!*******
  

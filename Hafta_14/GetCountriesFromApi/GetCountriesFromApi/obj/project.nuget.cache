@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WoRwOBNB3py7hbM7JQdPnvVIlGJC98ItdlbY6LZf24py24zVHbpnDWoFMxJeo5eHLuQR59rhrny3s0931PgdnQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\GetCountriesFromApi\\GetCountriesFromApi\\GetCountriesFromApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SABAH\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

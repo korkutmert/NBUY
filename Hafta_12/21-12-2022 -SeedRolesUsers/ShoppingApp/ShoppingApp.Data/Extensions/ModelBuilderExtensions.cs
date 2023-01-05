@@ -34,7 +34,7 @@ namespace ShoppingApp.Data.Extensions
 
             #region Kullanıcı bilgileri ekleniyor
             List<User> users = new List<User>
-            {
+            {       
                 new User
                 {
                     FirstName="Deniz",

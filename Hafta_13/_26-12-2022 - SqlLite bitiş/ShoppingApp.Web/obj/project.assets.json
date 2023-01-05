@@ -1660,11 +1660,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_12\\26-12-2022\\ShoppingApp.Web\\ShoppingApp.Web.csproj",
+      "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_13\\_26-12-2022 - SqlLite bitiş\\ShoppingApp.Web\\ShoppingApp.Web.csproj",
       "projectName": "ShoppingApp.Web",
-      "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_12\\26-12-2022\\ShoppingApp.Web\\ShoppingApp.Web.csproj",
+      "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_13\\_26-12-2022 - SqlLite bitiş\\ShoppingApp.Web\\ShoppingApp.Web.csproj",
       "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_12\\26-12-2022\\ShoppingApp.Web\\obj\\",
+      "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_13\\_26-12-2022 - SqlLite bitiş\\ShoppingApp.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1681,11 +1681,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_12\\26-12-2022\\ShoppingApp.Business\\ShoppingApp.Business.csproj": {
-              "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_12\\26-12-2022\\ShoppingApp.Business\\ShoppingApp.Business.csproj"
+            "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_13\\_26-12-2022 - SqlLite bitiş\\ShoppingApp.Business\\ShoppingApp.Business.csproj": {
+              "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_13\\_26-12-2022 - SqlLite bitiş\\ShoppingApp.Business\\ShoppingApp.Business.csproj"
             },
-            "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_12\\26-12-2022\\ShoppingApp.Core\\ShoppingApp.Core.csproj": {
-              "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_12\\26-12-2022\\ShoppingApp.Core\\ShoppingApp.Core.csproj"
+            "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_13\\_26-12-2022 - SqlLite bitiş\\ShoppingApp.Core\\ShoppingApp.Core.csproj": {
+              "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_13\\_26-12-2022 - SqlLite bitiş\\ShoppingApp.Core\\ShoppingApp.Core.csproj"
             }
           }
         }

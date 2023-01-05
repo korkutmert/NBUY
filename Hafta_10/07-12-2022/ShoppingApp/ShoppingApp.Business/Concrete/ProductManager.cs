@@ -56,7 +56,7 @@ namespace ShoppingApp.Business.Concrete
         #region PRODUCT'A ÖZGÜ OLANLAR
         public async Task<List<Product>> GetHomePageProductsAsync()
         {
-            return await _unitOfWork.Products.GetHomePageProductsAsync();
+            return await _unitOfWork.Products.GetHomePageProducts();
         }
 
         public Product GetProductByCategory()

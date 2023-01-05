@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LNsfZX7KoBOp4sa96TuR72LlJsiDgVa4cujYzrtlmz5edw27uS1wsxj1hPR7L/KaK+RQ4oTMIS6yNUc5j3ujJA==",
+  "dgSpecHash": "5AoQkU/bXqVR1Gw/JKughidfmehqRH1PCrf+VKjXBKre0Px+gpR7DxOLcr6vVk1a4kVzffQ+21T/io50XkjDIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_12\\26-12-2022\\ShoppingApp.Business\\ShoppingApp.Business.csproj",
+  "projectFilePath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_13\\_26-12-2022 - SqlLite bitiş\\ShoppingApp.Business\\ShoppingApp.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SABAH\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.1\\microsoft.aspnetcore.cryptography.internal.7.0.1.nupkg.sha512",
     "C:\\Users\\SABAH\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.1\\microsoft.aspnetcore.cryptography.keyderivation.7.0.1.nupkg.sha512",
