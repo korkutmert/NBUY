@@ -1,0 +1,15 @@
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_15\SOLİD\Solid04_Liskov'sSubstitionPrinciple\Solid04_Liskov'sSubstition\obj\Debug\net7.0\Solid04_Liskov'sSubstition.csproj.AssemblyReference.cache
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_15\SOLİD\Solid04_Liskov'sSubstitionPrinciple\Solid04_Liskov'sSubstition\obj\Debug\net7.0\Solid04_Liskov'sSubstition.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_15\SOLİD\Solid04_Liskov'sSubstitionPrinciple\Solid04_Liskov'sSubstition\obj\Debug\net7.0\Solid04_Liskov'sSubstition.AssemblyInfoInputs.cache
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_15\SOLİD\Solid04_Liskov'sSubstitionPrinciple\Solid04_Liskov'sSubstition\obj\Debug\net7.0\Solid04_Liskov'sSubstition.AssemblyInfo.cs
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_15\SOLİD\Solid04_Liskov'sSubstitionPrinciple\Solid04_Liskov'sSubstition\obj\Debug\net7.0\Solid04_Liskov'sSubstition.csproj.CoreCompileInputs.cache
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_15\SOLİD\Solid04_Liskov'sSubstitionPrinciple\Solid04_Liskov'sSubstition\bin\Debug\net7.0\Solid04_Liskov'sSubstition.exe
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_15\SOLİD\Solid04_Liskov'sSubstitionPrinciple\Solid04_Liskov'sSubstition\bin\Debug\net7.0\Solid04_Liskov'sSubstition.deps.json
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_15\SOLİD\Solid04_Liskov'sSubstitionPrinciple\Solid04_Liskov'sSubstition\bin\Debug\net7.0\Solid04_Liskov'sSubstition.runtimeconfig.json
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_15\SOLİD\Solid04_Liskov'sSubstitionPrinciple\Solid04_Liskov'sSubstition\bin\Debug\net7.0\Solid04_Liskov'sSubstition.dll
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_15\SOLİD\Solid04_Liskov'sSubstitionPrinciple\Solid04_Liskov'sSubstition\bin\Debug\net7.0\Solid04_Liskov'sSubstition.pdb
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_15\SOLİD\Solid04_Liskov'sSubstitionPrinciple\Solid04_Liskov'sSubstition\obj\Debug\net7.0\Solid04_Liskov'sSubstition.dll
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_15\SOLİD\Solid04_Liskov'sSubstitionPrinciple\Solid04_Liskov'sSubstition\obj\Debug\net7.0\refint\Solid04_Liskov'sSubstition.dll
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_15\SOLİD\Solid04_Liskov'sSubstitionPrinciple\Solid04_Liskov'sSubstition\obj\Debug\net7.0\Solid04_Liskov'sSubstition.pdb
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_15\SOLİD\Solid04_Liskov'sSubstitionPrinciple\Solid04_Liskov'sSubstition\obj\Debug\net7.0\Solid04_Liskov'sSubstition.genruntimeconfig.cache
+C:\Users\SABAH\Documents\GitHub\NBUY(mert)\Hafta_15\SOLİD\Solid04_Liskov'sSubstitionPrinciple\Solid04_Liskov'sSubstition\obj\Debug\net7.0\ref\Solid04_Liskov'sSubstition.dll
