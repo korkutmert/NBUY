@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ShoppingApp.Data",
+    "\\ShoppingApp.Data\\Concrete",
+    "\\ShoppingApp.Data\\Concrete\\EfCore",
+    "\\ShoppingApp.Data\\Concrete\\EfCore\\Repositories",
+    "\\ShoppingApp.Web",
+    "\\ShoppingApp.Web\\Controllers",
+    "\\ShoppingApp.Web\\Views",
+    "\\ShoppingApp.Web\\Views\\Shared",
+    "\\ShoppingApp.Web\\Views\\Shared\\Components",
+    "\\ShoppingApp.Web\\Views\\Shared\\Components\\Categories"
+  ],
+  "SelectedNode": "\\ShoppingApp.Web\\Controllers\\ShopController.cs",
+  "PreviewInSolutionExplorer": false
+}

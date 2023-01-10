@@ -11,7 +11,7 @@ namespace OzelDersYerim.Entity.Concrete
 {
     public class Teacher : BaseUserEntity
     {
-        public int BranchId { get; set; }
+
         public Branch Branch { get; set; }
         public string Experience { get; set; }
 
@@ -20,5 +20,6 @@ namespace OzelDersYerim.Entity.Concrete
         public Decimal? PricePerHour { get; set; }
        public User User { get; set; }
         public bool IsHome { get; set; }
+        public List<TeacherBranch> TeacherBranches { get; set; }
     }
 }

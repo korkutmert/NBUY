@@ -45,19 +45,19 @@ namespace OzelDersYerim.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "6c9ceaf7-63fa-4840-9049-6c612677c67e",
+                            Id = "14085800-1d24-46ce-86ee-bb96bf1be7f5",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "cb97b9b0-87b9-4270-8c7a-a197106e6597",
+                            Id = "dee34294-37dc-4607-ab3c-a75ec4d45494",
                             Name = "Student",
                             NormalizedName = "STUDENT"
                         },
                         new
                         {
-                            Id = "32b86078-b0db-4bfa-a0a9-5bd382fe88b4",
+                            Id = "e8a478db-ed58-43a4-ba02-3f52e4e46394",
                             Name = "Teacher",
                             NormalizedName = "TEACHER"
                         });
@@ -149,12 +149,22 @@ namespace OzelDersYerim.Data.Migrations
                         new
                         {
                             UserId = "f51a33d9-90b7-4304-8f27-296121b22ed8",
-                            RoleId = "32b86078-b0db-4bfa-a0a9-5bd382fe88b4"
+                            RoleId = "e8a478db-ed58-43a4-ba02-3f52e4e46394"
                         },
                         new
                         {
                             UserId = "36c1db42-7495-477f-921e-ba037f5188ed",
-                            RoleId = "cb97b9b0-87b9-4270-8c7a-a197106e6597"
+                            RoleId = "dee34294-37dc-4607-ab3c-a75ec4d45494"
+                        },
+                        new
+                        {
+                            UserId = "arzu",
+                            RoleId = "e8a478db-ed58-43a4-ba02-3f52e4e46394"
+                        },
+                        new
+                        {
+                            UserId = "serdar",
+                            RoleId = "e8a478db-ed58-43a4-ba02-3f52e4e46394"
                         });
                 });
 
@@ -326,24 +336,48 @@ namespace OzelDersYerim.Data.Migrations
                         {
                             Id = "f51a33d9-90b7-4304-8f27-296121b22ed8",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "90f54483-bde0-4ae5-878a-b34712bad6a4",
+                            ConcurrencyStamp = "a3e19faf-125c-4b6d-9fa6-091b48ed388d",
                             Email = "student@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "74ae7d3d-0e30-42b0-8386-d2d4c10cd0d6",
+                            SecurityStamp = "e27ead71-235e-43d1-95c0-5cabba755b6b",
                             TwoFactorEnabled = false
                         },
                         new
                         {
                             Id = "36c1db42-7495-477f-921e-ba037f5188ed",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "bc3b1bb8-6c52-4fed-ac68-9fd97d2617d5",
+                            ConcurrencyStamp = "85926b76-531b-49b7-80e6-bb3cd5cbdc33",
                             Email = "teacher@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "0abed994-6783-435a-bf52-4c96c8fffe8e",
+                            SecurityStamp = "e2e9e21d-f207-40e8-bed7-8e21ea17ea9e",
+                            TwoFactorEnabled = false
+                        },
+                        new
+                        {
+                            Id = "arzu",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "55e66db2-8d5f-4706-ad99-b43f6ef83011",
+                            Email = "arzu@gmail.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "b284b48d-15d6-4ea6-9dd2-d660cf7ff61e",
+                            TwoFactorEnabled = false
+                        },
+                        new
+                        {
+                            Id = "serdar",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "26069853-830f-4e6c-9cf8-514fd37023e1",
+                            Email = "serdar@gmail.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "d9a578b7-ec6a-418d-a953-ba349016633f",
                             TwoFactorEnabled = false
                         });
                 });
@@ -430,7 +464,7 @@ namespace OzelDersYerim.Data.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("BranchId")
+                    b.Property<int?>("BranchId")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Experience")
@@ -489,17 +523,95 @@ namespace OzelDersYerim.Data.Migrations
                             Id = 1,
                             About = "Mimar Sinan Güzel Sanatlar Üniversitesi Konservatuar mezunuyum. Uzmanlık alanım Piyano olamakla beraber keman ve gitar dersleri de vermekteyim.",
                             Age = "39",
-                            BranchId = 1,
                             Experience = "15",
                             FirstName = "Ahmet",
                             Gender = "Erkek",
-                            IsHome = false,
+                            IsHome = true,
                             LastName = "Yılmaz",
                             Location = "Beşiktaş",
                             PricePerHour = 450m,
                             ProfilePictureUrl = "10.png",
                             Url = "ogretmen-ahmet-yilmaz",
                             UserId = "36c1db42-7495-477f-921e-ba037f5188ed"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            About = "İngilizce Öğretmeniyim. Her türlü İngilizce sınavlarına hazırlık konusunda ders vermekteyim.",
+                            Age = "27",
+                            Experience = "5",
+                            FirstName = "Arzu",
+                            Gender = "Kadın",
+                            IsHome = false,
+                            LastName = "Doğramacı",
+                            Location = "Şişli",
+                            PricePerHour = 300m,
+                            ProfilePictureUrl = "11.png",
+                            Url = "ogretmen-arzu-dogramaci",
+                            UserId = "arzu"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            About = "İlköğretim-lise düzeyinde matematik dersleri verilir. Sınavlar için fazladan etüt alabilirsiniz.",
+                            Age = "42",
+                            Experience = "",
+                            FirstName = "Serdar",
+                            Gender = "Erkek",
+                            IsHome = false,
+                            LastName = "Kulbilge",
+                            Location = "Aksaray",
+                            PricePerHour = 250m,
+                            ProfilePictureUrl = "12.png",
+                            Url = "ogretmen-serdar-kulbilge",
+                            UserId = "serdar"
+                        });
+                });
+
+            modelBuilder.Entity("OzelDersYerim.Entity.Concrete.TeacherBranch", b =>
+                {
+                    b.Property<int>("TeacherId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("BranchId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("TeacherId", "BranchId");
+
+                    b.HasIndex("BranchId");
+
+                    b.ToTable("TeacherBranches", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            TeacherId = 1,
+                            BranchId = 1
+                        },
+                        new
+                        {
+                            TeacherId = 1,
+                            BranchId = 2
+                        },
+                        new
+                        {
+                            TeacherId = 2,
+                            BranchId = 1
+                        },
+                        new
+                        {
+                            TeacherId = 2,
+                            BranchId = 2
+                        },
+                        new
+                        {
+                            TeacherId = 3,
+                            BranchId = 1
+                        },
+                        new
+                        {
+                            TeacherId = 3,
+                            BranchId = 2
                         });
                 });
 
@@ -567,9 +679,7 @@ namespace OzelDersYerim.Data.Migrations
                 {
                     b.HasOne("OzelDersYerim.Entity.Concrete.Branch", "Branch")
                         .WithMany()
-                        .HasForeignKey("BranchId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("BranchId");
 
                     b.HasOne("OzelDersYerim.Entity.Concrete.Identity.User", "User")
                         .WithMany("Teachers")
@@ -580,11 +690,40 @@ namespace OzelDersYerim.Data.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("OzelDersYerim.Entity.Concrete.TeacherBranch", b =>
+                {
+                    b.HasOne("OzelDersYerim.Entity.Concrete.Branch", "Branch")
+                        .WithMany("TeacherBranches")
+                        .HasForeignKey("BranchId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("OzelDersYerim.Entity.Concrete.Teacher", "Teacher")
+                        .WithMany("TeacherBranches")
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Branch");
+
+                    b.Navigation("Teacher");
+                });
+
+            modelBuilder.Entity("OzelDersYerim.Entity.Concrete.Branch", b =>
+                {
+                    b.Navigation("TeacherBranches");
+                });
+
             modelBuilder.Entity("OzelDersYerim.Entity.Concrete.Identity.User", b =>
                 {
                     b.Navigation("Students");
 
                     b.Navigation("Teachers");
+                });
+
+            modelBuilder.Entity("OzelDersYerim.Entity.Concrete.Teacher", b =>
+                {
+                    b.Navigation("TeacherBranches");
                 });
 #pragma warning restore 612, 618
         }

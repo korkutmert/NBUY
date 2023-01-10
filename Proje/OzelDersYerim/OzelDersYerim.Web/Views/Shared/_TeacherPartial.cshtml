@@ -1,8 +1,11 @@
 ﻿@using OzelDersYerim.Web.Models.Dtos;
 @model TeacherDto
 
-<div>
-    @Model.Id
-    @Model.FirstName
-    @Model.LastName
+<div class="card">
+  <img src="~/Images/@Model.ProfilePictureUrl" class="card-img-top" width="25">
+  <div class="card-body">
+        <h5 class="card-title text-center">@Model.FirstName @Model.LastName</h5>
+    <p class="card-text"> Burda Branş adı yer alacak</p>
+    <a href="#" class="btn btn-primary btn-sm">Detay</a>
+  </div>
 </div>

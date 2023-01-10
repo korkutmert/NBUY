@@ -18,7 +18,7 @@ namespace OzelDersYerim.Data.Config
         {
             builder.HasKey(t => t.Id);
             builder.Property(t => t.Id).ValueGeneratedOnAdd();
-           
+
             builder.Property(t => t.FirstName).IsRequired().HasMaxLength(50);
             builder.Property(t => t.LastName).IsRequired().HasMaxLength(50);
             builder.Property(t => t.Gender).IsRequired().HasMaxLength(20);
@@ -42,59 +42,58 @@ namespace OzelDersYerim.Data.Config
                         Gender = "Erkek",
                         Age = "39",
                         About = "Mimar Sinan Güzel Sanatlar Üniversitesi Konservatuar mezunuyum. Uzmanlık alanım Piyano olamakla beraber keman ve gitar dersleri de vermekteyim.",
-                        Experience = "15",
-                        BranchId = 1,
+                        Experience = "15",                      
                         Location = "Beşiktaş",
                         Url = "ogretmen-ahmet-yilmaz",
                         ProfilePictureUrl = "10.png",
                         PricePerHour = 450,
-                        IsHome= true,
-                       
+                        IsHome = true,
 
 
-                    }
-                     //new Teacher
-                     //{
-                     //    Id = 2,
-                     //    FirstName = "Arzu",
-                     //    LastName = "Doğramacı",
-                     //    Gender = "Kadın",
-                     //    Age = "27",
-                     //    About = "İngilizce Öğretmeniyim. Her türlü İngilizce sınavlarına hazırlık konusunda ders vermekteyim.",
-                     //    Experience = "5",
-                     //    Location = "Şişli",
-                     //    Url = "ogretmen-arzu-dogramaci",
-                     //    ProfilePictureUrl = "11.png",
-                     //    PricePerHour = 300,
-                     //    BranchId = 3,
-                     //   UserId="21"
+
+                    },
+                     new Teacher
+                     {
+                         Id = 2,
+                         FirstName = "Arzu",
+                         LastName = "Doğramacı",
+                         Gender = "Kadın",
+                         Age = "27",
+                         About = "İngilizce Öğretmeniyim. Her türlü İngilizce sınavlarına hazırlık konusunda ders vermekteyim.",
+                         Experience = "5",
+                         Location = "Şişli",
+                         Url = "ogretmen-arzu-dogramaci",
+                         ProfilePictureUrl = "11.png",
+                         PricePerHour = 300,                    
+                         UserId = "arzu"
 
 
-                     //}//, new Teacher
-                      //{
-                      //    Id = 3,
-                      //    FirstName = "Serdar",
-                      //    LastName = "Kulbilge",
-                      //    Gender = "Erkek",
-                      //    Age = "42",
-                      //    About = "İlköğretim-lise düzeyinde matematik dersleri verilir. Sınavlar için fazladan etüt alabilirsiniz.",
-                      //    Experience = "",
-                      //    Location = "Aksaray",
-                      //    Url = "ogretmen-serdar-kulbilge",
-                      //    ProfilePictureUrl = "12.png",
-                      //    PricePerHour = 250,
-                      //    BranchId = 1
+                     }, new Teacher
+                     {
+                         Id = 3,
+                         FirstName = "Serdar",
+                         LastName = "Kulbilge",
+                         Gender = "Erkek",
+                         Age = "42",
+                         About = "İlköğretim-lise düzeyinde matematik dersleri verilir. Sınavlar için fazladan etüt alabilirsiniz.",
+                         Experience = "",
+                         Location = "Aksaray",
+                         Url = "ogretmen-serdar-kulbilge",
+                         ProfilePictureUrl = "12.png",
+                         PricePerHour = 250,
+                         
+                         UserId = "serdar"
 
 
-                //}, new Teacher
-                //{
-                //    Id = 4,
-                //    FirstName = "Hande",
-                //    LastName = "Yıldırım",
-                //    Gender = "Kadın",
-                //    Age = "28",
-                //    About = "Boğaziçi Üniversitesi Mezunuyum. 28 yaşındayım. Özel bir lisede Kimya Öğretmenliği yapıyorum.",
-                //    Experience = "6",
+                     } //, new Teacher
+                       //{
+                       //    Id = 4,
+                       //    FirstName = "Hande",
+                       //    LastName = "Yıldırım",
+                       //    Gender = "Kadın",
+                       //    Age = "28",
+                       //    About = "Boğaziçi Üniversitesi Mezunuyum. 28 yaşındayım. Özel bir lisede Kimya Öğretmenliği yapıyorum.",
+                       //    Experience = "6",
 
                 //    Location = "Etiler",
                 //    Url = "ogretmen-hande-yildirim",

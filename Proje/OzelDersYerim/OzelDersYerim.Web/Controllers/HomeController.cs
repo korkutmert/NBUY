@@ -28,7 +28,7 @@ public class HomeController : Controller
                 FirstName = teacher.FirstName,
                 LastName = teacher.LastName,
                 Age = teacher.Age,
-                BranchId = teacher.BranchId,               
+                              
                 Location = teacher.Location,
                 PricePerHour = teacher.PricePerHour,
                 Url = teacher.Url,
@@ -37,6 +37,7 @@ public class HomeController : Controller
         }
         return View(teacherDtos);
     }
+
 
 
 }

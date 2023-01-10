@@ -47,6 +47,16 @@ namespace OzelDersYerim.Data.Extensions
                      {
                          Id="36c1db42-7495-477f-921e-ba037f5188ed",
                          Email="teacher@gmail.com",
+                     },
+                 new User
+                     {
+                         Id="arzu",
+                         Email="arzu@gmail.com",
+                     },
+                 new User
+                     {
+                         Id="serdar",
+                         Email="serdar@gmail.com",
                      }
 
             };
@@ -66,6 +76,16 @@ namespace OzelDersYerim.Data.Extensions
                 {
                     UserId=users[1].Id,
                     RoleId=roles.First(r=>r.Name=="Student").Id
+                },
+                new IdentityUserRole<string>
+                {
+                    UserId=users[2].Id,
+                    RoleId=roles.First(r=>r.Name=="Teacher").Id
+                },
+                new IdentityUserRole<string>
+                {
+                    UserId=users[3].Id,
+                    RoleId=roles.First(r=>r.Name=="Teacher").Id
                 }
             };
             modelBuilder.Entity<IdentityUserRole<string>>().HasData(userRoles);

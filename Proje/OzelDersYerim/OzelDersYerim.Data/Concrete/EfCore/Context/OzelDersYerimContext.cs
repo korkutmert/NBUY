@@ -23,6 +23,7 @@ namespace OzelDersYerim.Data.Concrete.EfCore.Context
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Branch> Branches { get; set; }
+        public DbSet<TeacherBranch> TeacherBranches { get; set; }
 
 
 
@@ -37,7 +38,8 @@ namespace OzelDersYerim.Data.Concrete.EfCore.Context
             modelBuilder.ApplyConfiguration(new StudentConfig());
             modelBuilder.ApplyConfiguration(new TeacherConfig());
             modelBuilder.ApplyConfiguration(new BranchConfig());
-             base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfiguration(new TeacherBranchConfig());
+            base.OnModelCreating(modelBuilder);
            
 
         }

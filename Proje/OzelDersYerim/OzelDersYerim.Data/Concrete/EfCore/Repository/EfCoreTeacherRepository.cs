@@ -22,9 +22,20 @@ namespace OzelDersYerim.Data.Concrete.EfCore.Repository
         }
 
 
-        public Task<List<Teacher>> GetBranchByTeacherAsync(string branch)
+        public async Task<List<Teacher>> GetBranchByTeacherAsync(string branch)
         {
-            throw new NotImplementedException();
+            var teachers = OzelDersYerimContext
+                .Teachers
+                //.Where(t => t.User.EmailConfirmed == true)
+                .AsQueryable();
+            if (branch!=null)
+            {
+                teachers =
+                    teachers.Include(t => t.TeacherBranches)
+                    .ThenInclude(tb => tb.Branch)
+                    .Where(t => t.TeacherBranches.Any(tb => tb.Branch.Url == branch));
+            }
+            return await teachers.ToListAsync();
         }
 
         public async Task<List<Teacher>> GetHomePageTeachersAsync()

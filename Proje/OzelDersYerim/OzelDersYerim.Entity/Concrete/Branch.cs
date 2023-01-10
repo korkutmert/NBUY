@@ -14,5 +14,7 @@ namespace OzelDersYerim.Entity.Concrete
         public string Url { get; set; }
         public string ImageUrl { get; set; }
         public DateTime CreatedDate { get ; set ; }
+        public List<TeacherBranch> TeacherBranches { get; set; }
+
     }
 }
