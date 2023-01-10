@@ -7,9 +7,7 @@ namespace OzelDersYerim.Web.Models.Dtos
     {
          
 
-        [DisplayName("Üyelik Tipi")]
-        [Required(ErrorMessage = "{0} alanı zorunludur.")]
-        public string Role { get; set; }
+     
 
         [DisplayName("Ad")]
         [Required(ErrorMessage = "{0} alanı zorunludur.")]
@@ -19,9 +17,6 @@ namespace OzelDersYerim.Web.Models.Dtos
         [Required(ErrorMessage = "{0} alanı zorunludur.")]
         public string LastName { get; set; }
 
-        [DisplayName("Kullanıcı Adı")]
-        [Required(ErrorMessage = "{0} alanı zorunludur.")]
-        public string UserName { get; set; }
 
         [DisplayName("Eposta")]
         [Required(ErrorMessage = "{0} alanı zorunludur.")]

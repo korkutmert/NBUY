@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using OzelDersYerim.Entity.Concrete;
 using OzelDersYerim.Entity.Concrete.Identity;
 using OzelDersYerim.Web.Models.Dtos;
 
@@ -24,16 +25,23 @@ namespace OzelDersYerim.Web.Controllers
         }
 
         [HttpPost]
-        //public async Task<IActionResult> Register(RegisterDto registerDto)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        if (true)
-        //        {
-
-        //        }
-        //    }
-        //}
+        public  Task<IActionResult> Register(RegisterDto registerDto, string optionType)
+        {
+          if (optionType=="TeacherSelect")
+          {
+            if (ModelState.IsValid)
+            {
+                var teacher = new Teacher
+                {
+                    FirstName=registerDto.FirstName,
+                    LastName=registerDto.LastName,
+                    
+                    
+                
+                };
+            }
+          }
+        }
         public IActionResult Login(string returnUrl = null)
         {
             return View(new LoginDto { ReturnUrl = returnUrl });

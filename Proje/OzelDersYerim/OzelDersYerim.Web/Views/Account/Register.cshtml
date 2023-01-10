@@ -9,11 +9,12 @@
         <div class="col-4">
             <div asp-validation-summary="All" class="text-danger"></div>
             <div class="mb-3">
-                <label action="form-label" asp-for="Role">Üyelik Tipi</label>
-
-                <select asp-for="Role" class="form-control">
-                    <option selected value="1">Öğrenci</option>
-                    <option value="2">Öğretmen</option>
+              
+                    <label class="mb-2 form-label" action="form-label">Üyelik Tipi</label>  
+                <select name="optionType" class="form-select">
+                    <option selected >Seçiniz</option>
+                    <option  value="StudentSelected">Öğrenci</option>
+                    <option value="TeacherSelected">Öğretmen</option>
                 </select>
             </div>
             <div class="mb-3">
@@ -27,11 +28,11 @@
                 <input class="form-control" asp-for="LastName">
                 <span asp-validation-for="LastName" class="text-danger"></span>
             </div>
-            <div class="mb-3">
+            @* <div class="mb-3">
                 <label asp-for="UserName" class="form-label"></label>
                 <input class="form-control" asp-for="UserName">
                 <span asp-validation-for="UserName" class="text-danger"></span>
-            </div>
+            </div> *@
             <div class="mb-3">
                 <label asp-for="Email" class="form-label"></label>
                 <input class="form-control" asp-for="Email">
@@ -53,4 +54,5 @@
                asp-action="Index">Vazgeç</a>
         </div>
     </div>
+     
 </form>

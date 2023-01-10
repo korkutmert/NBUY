@@ -15,3 +15,37 @@ C:\Users\SABAH\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\r
 C:\Users\SABAH\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\OzelDersYerim.Data.pdb
 C:\Users\SABAH\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\OzelDersYerim.Data.genruntimeconfig.cache
 C:\Users\SABAH\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\ref\OzelDersYerim.Data.dll
+C:\Users\Dell\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\OzelDersYerim.Data.csproj.AssemblyReference.cache
+C:\Users\Dell\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\OzelDersYerim.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\OzelDersYerim.Data.AssemblyInfoInputs.cache
+C:\Users\Dell\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\OzelDersYerim.Data.AssemblyInfo.cs
+C:\Users\Dell\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\OzelDersYerim.Data.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\OzelDersYerim.Data.dll
+C:\Users\Dell\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\refint\OzelDersYerim.Data.dll
+C:\Users\Dell\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\OzelDersYerim.Data.pdb
+C:\Users\Dell\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\bin\Debug\net7.0\OzelDersYerim.Data.deps.json
+C:\Users\Dell\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\bin\Debug\net7.0\OzelDersYerim.Data.runtimeconfig.json
+C:\Users\Dell\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\bin\Debug\net7.0\OzelDersYerim.Data.dll
+C:\Users\Dell\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\bin\Debug\net7.0\OzelDersYerim.Data.pdb
+C:\Users\Dell\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\bin\Debug\net7.0\OzelDersYerim.Entity.dll
+C:\Users\Dell\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\bin\Debug\net7.0\OzelDersYerim.Entity.pdb
+C:\Users\Dell\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\OzelDersYerim.Data.csproj.CopyComplete
+C:\Users\Dell\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\OzelDersYerim.Data.genruntimeconfig.cache
+C:\Users\Dell\Desktop\Proje\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\ref\OzelDersYerim.Data.dll
+C:\Users\Dell\Desktop\Proje - Kopya\OzelDersYerim\OzelDersYerim.Data\bin\Debug\net7.0\OzelDersYerim.Data.deps.json
+C:\Users\Dell\Desktop\Proje - Kopya\OzelDersYerim\OzelDersYerim.Data\bin\Debug\net7.0\OzelDersYerim.Data.runtimeconfig.json
+C:\Users\Dell\Desktop\Proje - Kopya\OzelDersYerim\OzelDersYerim.Data\bin\Debug\net7.0\OzelDersYerim.Data.dll
+C:\Users\Dell\Desktop\Proje - Kopya\OzelDersYerim\OzelDersYerim.Data\bin\Debug\net7.0\OzelDersYerim.Data.pdb
+C:\Users\Dell\Desktop\Proje - Kopya\OzelDersYerim\OzelDersYerim.Data\bin\Debug\net7.0\OzelDersYerim.Entity.dll
+C:\Users\Dell\Desktop\Proje - Kopya\OzelDersYerim\OzelDersYerim.Data\bin\Debug\net7.0\OzelDersYerim.Entity.pdb
+C:\Users\Dell\Desktop\Proje - Kopya\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\OzelDersYerim.Data.csproj.AssemblyReference.cache
+C:\Users\Dell\Desktop\Proje - Kopya\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\OzelDersYerim.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\Desktop\Proje - Kopya\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\OzelDersYerim.Data.AssemblyInfoInputs.cache
+C:\Users\Dell\Desktop\Proje - Kopya\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\OzelDersYerim.Data.AssemblyInfo.cs
+C:\Users\Dell\Desktop\Proje - Kopya\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\OzelDersYerim.Data.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\Proje - Kopya\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\OzelDersYerim.Data.csproj.CopyComplete
+C:\Users\Dell\Desktop\Proje - Kopya\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\OzelDersYerim.Data.dll
+C:\Users\Dell\Desktop\Proje - Kopya\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\refint\OzelDersYerim.Data.dll
+C:\Users\Dell\Desktop\Proje - Kopya\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\OzelDersYerim.Data.pdb
+C:\Users\Dell\Desktop\Proje - Kopya\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\OzelDersYerim.Data.genruntimeconfig.cache
+C:\Users\Dell\Desktop\Proje - Kopya\OzelDersYerim\OzelDersYerim.Data\obj\Debug\net7.0\ref\OzelDersYerim.Data.dll

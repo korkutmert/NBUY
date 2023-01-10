@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OzelDersYerim.Data.Concrete.EfCore.Context;
 
@@ -10,9 +11,11 @@ using OzelDersYerim.Data.Concrete.EfCore.Context;
 namespace OzelDersYerim.Data.Migrations
 {
     [DbContext(typeof(OzelDersYerimContext))]
-    partial class OzelDersYerimContextModelSnapshot : ModelSnapshot
+    [Migration("20230110152153_InitialDb")]
+    partial class InitialDb
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.1");

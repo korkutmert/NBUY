@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_13\\26-12-2022\\ShoppingApp.Core\\ShoppingApp.Core.csproj": {}
+    "c:\\Users\\Dell\\Desktop\\YAZYAZ\\NBUY\\Hafta_13\\26-12-2022\\ShoppingApp.Core\\ShoppingApp.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_13\\26-12-2022\\ShoppingApp.Core\\ShoppingApp.Core.csproj": {
+    "c:\\Users\\Dell\\Desktop\\YAZYAZ\\NBUY\\Hafta_13\\26-12-2022\\ShoppingApp.Core\\ShoppingApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_13\\26-12-2022\\ShoppingApp.Core\\ShoppingApp.Core.csproj",
+        "projectUniqueName": "c:\\Users\\Dell\\Desktop\\YAZYAZ\\NBUY\\Hafta_13\\26-12-2022\\ShoppingApp.Core\\ShoppingApp.Core.csproj",
         "projectName": "ShoppingApp.Core",
-        "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_13\\26-12-2022\\ShoppingApp.Core\\ShoppingApp.Core.csproj",
-        "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY(mert)\\Hafta_13\\26-12-2022\\ShoppingApp.Core\\obj\\",
+        "projectPath": "c:\\Users\\Dell\\Desktop\\YAZYAZ\\NBUY\\Hafta_13\\26-12-2022\\ShoppingApp.Core\\ShoppingApp.Core.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Dell\\Desktop\\YAZYAZ\\NBUY\\Hafta_13\\26-12-2022\\ShoppingApp.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -65,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

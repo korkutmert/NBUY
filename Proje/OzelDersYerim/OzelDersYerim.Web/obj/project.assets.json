@@ -1490,34 +1490,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SABAH\\.nuget\\packages\\": {}
+    "C:\\Users\\Dell\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SABAH\\Desktop\\Proje\\OzelDersYerim\\OzelDersYerim.Web\\OzelDersYerim.Web.csproj",
+      "projectUniqueName": "c:\\Users\\Dell\\Desktop\\Proje - Kopya\\OzelDersYerim\\OzelDersYerim.Web\\OzelDersYerim.Web.csproj",
       "projectName": "OzelDersYerim.Web",
-      "projectPath": "C:\\Users\\SABAH\\Desktop\\Proje\\OzelDersYerim\\OzelDersYerim.Web\\OzelDersYerim.Web.csproj",
-      "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SABAH\\Desktop\\Proje\\OzelDersYerim\\OzelDersYerim.Web\\obj\\",
+      "projectPath": "c:\\Users\\Dell\\Desktop\\Proje - Kopya\\OzelDersYerim\\OzelDersYerim.Web\\OzelDersYerim.Web.csproj",
+      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\Dell\\Desktop\\Proje - Kopya\\OzelDersYerim\\OzelDersYerim.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\SABAH\\Desktop\\Proje\\OzelDersYerim\\OzelDersYerim.Business\\OzelDersYerim.Business.csproj": {
-              "projectPath": "C:\\Users\\SABAH\\Desktop\\Proje\\OzelDersYerim\\OzelDersYerim.Business\\OzelDersYerim.Business.csproj"
+            "c:\\Users\\Dell\\Desktop\\Proje - Kopya\\OzelDersYerim\\OzelDersYerim.Business\\OzelDersYerim.Business.csproj": {
+              "projectPath": "c:\\Users\\Dell\\Desktop\\Proje - Kopya\\OzelDersYerim\\OzelDersYerim.Business\\OzelDersYerim.Business.csproj"
             }
           }
         }
@@ -1562,7 +1560,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
